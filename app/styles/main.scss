@@ -1,0 +1,11 @@
+@import 'bower_components/newsapps-styles/init-helpers';
+@import 'bower_components/newsapps-styles/initialize';
+
+.banner-image{
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  background-position: center center;
+  background-color: #111;
+}
+.banner-image{background-image:url(../assets/images/TexasCity-Banner.jpg);}
