@@ -1,0 +1,7 @@
+@mixin cover-image($photo-url) {
+  background: url($photo-url) no-repeat center center;
+  background-size: cover;
+  //ie 8
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$photo-url', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$photo-url', sizingMethod='scale')";
+}

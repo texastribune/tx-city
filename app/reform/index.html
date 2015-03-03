@@ -1,4 +1,4 @@
-{% extends "templates/_base.html" %}
+{% extends "templates/_base_sub.html" %}
 
 {% block styles %}
 {{ super() }}
@@ -7,8 +7,8 @@
 {% block content %}
 <div class="story-content">
   <header class="prose">
-    <h1>{{ OVERVIEW.headline }}</h1>
-    <p class="byline">By <a href="{{ OVERVIEW.author_url}} ">{{ OVERVIEW.byline }}</a> | {{ OVERVIEW.pub_date }}</p>
+    <h1>{{ REFORM.headline }}</h1>
+    <p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a> and <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a>, The Houston Chronicle | {{ REFORM.pub_date }}</p>
   </header>
   <div class="sharelines">
     <h3>Sharelines</h3>
@@ -20,12 +20,12 @@
         <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=&redirect_uri=" title="share on Facebook" class="social-share" target="_blank">
         <i class="fa fa-facebook"></i>
         </a>
-        <p>{{ OVERVIEW.shareline_1 }}</p>
+        <p>{{ REFORM.shareline_1 }}</p>
       </li>
     </ul>
   </div>
   <section class="prose">
-      {{ OVERVIEW.text }}
+      {{ REFORM.text }}
   </section>
 </div>
 {% endblock %}

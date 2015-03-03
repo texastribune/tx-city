@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="//s3.amazonaws.com/static.texastribune.org/common/images/favicon.ico">
   {% block styles %}
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
   {% endblock %}
 </head>
@@ -14,10 +14,12 @@
   <header class="masthead app-bar promote-layer">
     <div class="container menu-container">
       <div class="branding">
+        <div class="branding">
         <span class="sub-text">A project by</span>
         <a href="//www.texastribune.org/"><img class="trib-logo desktop" alt="The Texas Tribune" src="http://s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png"></a>
         <span class="sub-text">and</span>
         <a href="//www.houstonchronicle.com"><img class="trib-logo desktop" alt="The Houston Chronicle" src="http://www.houstonchronicle.com/img/modules/siteheader/logos/logo_home_large.png"></a>
+      </div>
       </div>
     </div>
   </header>
@@ -31,9 +33,9 @@
   <div class="story-container">
     <nav id="top-nav">
       <ul>
-        <li><a href="{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
-        <li><a href="{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
-        <li><a href="{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
+        <li><a href="../{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
+        <li><a href="../{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
+        <li><a href="../{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
       </ul>
     </nav>
     <nav id="sticky-nav"></nav>
@@ -83,7 +85,7 @@
     s.parentNode.insertBefore(i,s)}(window,document,'script','ga'));
     ga('create','UA-9827490-7');ga('send','pageview');
   </script>
-  <script src="scripts/main.js"></script>
+  <script src="..scripts/main.js"></script>
   {% endblock %}
 </body>
 </html>

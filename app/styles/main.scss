@@ -1,11 +1,28 @@
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import 'bower_components/neat/app/assets/stylesheets/neat';
 @import 'bower_components/newsapps-styles/init-helpers';
 @import 'bower_components/newsapps-styles/initialize';
 
-.banner-image{
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 100%;
-  background-position: center center;
-  background-color: #111;
+@import 'helpers/grid';
+@import 'helpers/colors';
+@import 'helpers/mixins';
+@import 'helpers/typography';
+@import 'helpers/theme';
+@import 'helpers/ads';
+
+@import 'components/banner';
+@import 'components/nav';
+@import 'components/sharelines';
+
+.branding {
+  .sub-text {
+    color:white;
+    text-transform: uppercase;
+    vertical-align: top;
+    line-height: 1.8em;
+    font-size: 0.8em;
+  }
+  img {
+    padding:0 0.5em;
+  }
 }
-.banner-image{background-image:url(../assets/images/TexasCity-Banner.jpg);}

@@ -1,0 +1,30 @@
+.ad-container {
+  border-bottom: 1px solid $line-gray;
+  border-top: 1px solid $line-gray;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.banner-ad {
+  @extend %content-block;
+  text-align: center;
+  width: 100%;
+
+  div {
+    border: 1px solid $line-gray;
+  }
+
+  &.bottom {
+    margin: 1em auto;
+  }
+
+}
+
+.box-ad {
+  margin-bottom: 1em;
+}
+
+.rotating-ad {
+  margin: 1em auto;
+  text-align: center;
+}

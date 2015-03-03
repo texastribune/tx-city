@@ -1,9 +1,63 @@
 {
   "META": {
-    "project_title": "Texas City: 10 Years Later",
-    "project_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "project_title": "Texas City: Could It Happen Again?",
+    "project_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "section_1_title": "Overview",
+    "section_1_slug": "",
+    "section_2_title": "Reform & Enforcement",
+    "section_2_slug": "reform",
+    "section_3_title": "Deaths in the Industry",
+    "section_3_slug": "data"
   },
-  "OVERVIEW": {},
-  "REFORM": {},
-  "DATA": {}
+  "OVERVIEW": {
+    "headline": "Texas City rocked by refinery explosion",
+    "byline": "Jim Malewitz",
+    "author_url": "http://www.texastribune.org/about/staff/jim-malewitz",
+    "pub_date": "March 22, 2005",
+    "shareline_1": "This is a very interesting fact from the story",
+    "text": "<p>This is the story itself.</p>\n<p>It’s really interesting. You should read it and share it with all of your friends. If you don’t you’re a bad person.</p>\n<p>Also, aren’t dinosaurs just the coolest? Seriously, who doesn’t love Jurassic Park and some incredibly smart velociraptors. </p>\n",
+    "video_title": "",
+    "video_code": "",
+    "video_caption": "",
+    "timeline_code": "",
+    "slideshow_code": ""
+  },
+  "REFORM": {
+    "headline": "Texas City rocked by refinery explosion",
+    "byline_1": "Mark Collette",
+    "author_1_url": "http://www.houstonchronicle.com/author/mark-collette/",
+    "byline_2": "Lise Olsen",
+    "author_2_url": "http://www.houstonchronicle.com/author/lise-olsen/",
+    "pub_date": "March 22, 2005",
+    "shareline_1": "This is a very interesting fact from the story",
+    "shareline_2": "This is a very interesting fact from the story",
+    "text": "<p>This is the story itself.</p>\n<p>It’s really interesting. You should read it and share it with all of your friends. If you don’t you’re a bad person.</p>\n<p>Also, aren’t dinosaurs just the coolest? Seriously, who doesn’t love Jurassic Park and some incredibly smart velociraptors. </p>\n",
+    "video_title": "",
+    "video_code": "",
+    "video_caption": "",
+    "photo_1": "",
+    "photo_2": "",
+    "photo_3": "",
+    "photo_4": "",
+    "photo_caption_1": "",
+    "photo_caption_2": "",
+    "photo_caption_3": "",
+    "photo_caption_4": "",
+    "block_quote": "",
+    "block_quote_source": "",
+    "disclosure": ""
+  },
+  "DATA": {
+    "headline": "Texas City rocked by refinery explosion",
+    "byline": "Jim Malewitz",
+    "author_url": "http://www.texastribune.org/about/staff/jim-malewitz",
+    "pub_date": "March 22, 2005",
+    "shareline_1": "This is a very interesting fact from the story",
+    "text": "<p>This is the story itself.</p>\n<p>It’s really interesting. You should read it and share it with all of your friends. If you don’t you’re a bad person.</p>\n<p>Also, aren’t dinosaurs just the coolest? Seriously, who doesn’t love Jurassic Park and some incredibly smart velociraptors. </p>\n",
+    "video_title": "",
+    "video_code": "",
+    "video_caption": "",
+    "timeline_code": "",
+    "slideshow_code": ""
+  }
 }
