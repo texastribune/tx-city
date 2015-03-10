@@ -15,35 +15,48 @@
   ul {
     margin: 0 0 1em 0;
     li {
-      background-color:#008990;
+      background-color:#99d0d3;
       border-bottom:2px solid white;
       padding: 0.5em;
       text-align: center;
       &.selected {
-        background-color:#99d0d3;
+        background-color:#008990;
+        a{
+          color:white;
+        }
       }
       a {
-        color:#444;
+        color:#333;
         text-transform: uppercase;
-        font-weight:700;
+        letter-spacing:0.03em;
+        font-weight:400;
         cursor:pointer;
+        &:hover {
+          text-decoration: none;
+        }
       }
       @include media($default-560){
         float:left;
         width:25%;
         text-align:center;
         background-color: white;
-        padding: 0.5em;
+        padding: 1em 0.5em;
         margin: -1em 0 1em 0;
-        border-bottom:3px solid #99d0d3;
+        border-bottom: 2px solid #008990;
+        a {
+          color:#333;
+        }
         &:hover{
           background-color:#008990;
+          a {
+            color:white;
+          }
         }
-        &.selected:hover {
+        &.selected {
           background-color:#99d0d3;
-        }
-        a:hover {
-          text-decoration: none;
+          a {
+            color:#333;
+          }
         }
       }
     }

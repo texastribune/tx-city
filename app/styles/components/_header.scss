@@ -1,4 +1,4 @@
-$med-header: new-breakpoint(min-width 450px max-width 560px);
+$med-header: new-breakpoint(min-width 451px max-width 560px);
 $small-header: new-breakpoint(max-width 450px);
 
 .masthead {
@@ -9,15 +9,15 @@ $small-header: new-breakpoint(max-width 450px);
     }
     .sub-text {
       color:white;
-      text-transform: uppercase;
       vertical-align: text-top;
-      font-size: 0.8em;
-      display: none;
-      @include media($default-560){
-        display:inline;
+      display: inline;
+      line-height:0.7em;
+      @include media($small-header){
+        display:none;
       }
       @include media($default-768){
-        line-height:0.8em;
+        line-height:0.3em;
+        font-size: 1.25em;
       }
     }
     .trib-logo{
@@ -31,10 +31,6 @@ $small-header: new-breakpoint(max-width 450px);
     }
     .chron-logo{
       height: 1.4em;
-      @include media($med-header){
-        border-left:1px solid white;
-        padding-left:0.5em;
-      }
       @include media($default-768){
         height: 1.75em;
       }

@@ -5,69 +5,75 @@
 {% endblock %}
 
 {% block content %}
-<nav id="top-nav">
-  <ul>
-    <li class="selected"><a href="{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
-    <li><a href="{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
-    <li><a href="{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
-    <li><a href="{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
-  </ul>
-</nav>
-<div class="story-content">
-  <header class="prose">
-    <h1>{{ OVERVIEW.headline }}</h1>
-    <p class="byline">By <a href="{{ OVERVIEW.author_url}} ">{{ OVERVIEW.byline }}</a> | {{ OVERVIEW.pub_date }}</p>
-  </header>
-  <div class="sharelines">
-    <h3>Sharelines</h3>
+<div class="story-container">
+  <nav id="top-nav">
     <ul>
-      <li>
-        <a href="https://twitter.com/intent/tweet?via=texastribune" title="share on Twitter" class="social-share" target="_blank">
-        <i class="fa fa-twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=&redirect_uri=" title="share on Facebook" class="social-share" target="_blank">
-        <i class="fa fa-facebook"></i>
-        </a>
-        <p>{{ OVERVIEW.shareline_1 }}</p>
-      </li>
+      <li class="selected"><a href="{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
+      <li><a href="{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
+      <li><a href="{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
+      <li><a href="{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
     </ul>
-  </div>
-  <section class="prose">
-      {{ OVERVIEW.text }}
-  </section>
-</div>
-<div id="timeline">
-  <iframe height="450px" width="100%" frameborder="0" scrolling="no" src="http://graphics.texastribune.org/graphics/tx-city-ten-years/"></iframe>
-</div>
-<div class="story-content">
-  <div class="prose">
-    {{ OVERVIEW.text }}
-    <div class="findings">
-      <h3>Investigative Findings</h3>
-        {{ OVERVIEW.findings }}
-    </div>
-    {{ OVERVIEW.text }}
-    {{ OVERVIEW.text }}
-  </div>
-  <section>
-    <hr class="yellow">
-    <div class="flexslider">
-      <ul class="slides">
-      {% for slide in SLIDESHOW %}
+  </nav>
+  <div class="story-content">
+    <header class="prose">
+      <h1>{{ OVERVIEW.headline }}</h1>
+      <p class="byline">By <a href="{{ OVERVIEW.author_url}} ">{{ OVERVIEW.byline }}</a> | {{ OVERVIEW.pub_date }}</p>
+    </header>
+    <div class="sharelines">
+      <h3>Sharelines</h3>
+      <ul>
         <li>
-          <div class="big-block slider-image">
-            <img alt="Texas City Explosion" src="/assets/images/slideshow/{{ slide.Photo }}">
-          </div>
-          <div class="small-block">
-            <p class="photo-credit">{{slide.Credit}}</p>
-            <p>{{ slide.Caption }}</p>
-          </div>
+          <a href="https://twitter.com/intent/tweet?via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+          <i class="fa fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=&redirect_uri=" title="share on Facebook" class="social-share" target="_blank">
+          <i class="fa fa-facebook"></i>
+          </a>
+          <p>{{ OVERVIEW.shareline_1 }}</p>
         </li>
-      {% endfor %}
       </ul>
     </div>
-    <hr class="yellow">
-  </section>
+    <section class="prose">
+        {{ OVERVIEW.text }}
+    </section>
+  </div>
+</div>
+<div class="story-container">
+  <div id="timeline">
+    <iframe height="450px" width="100%" frameborder="0" scrolling="no" src="http://graphics.texastribune.org/graphics/tx-city-ten-years/"></iframe>
+  </div>
+</div>
+<div class="story-container">
+  <div class="story-content">
+    <div class="prose">
+      {{ OVERVIEW.text }}
+      <div class="findings">
+        <h3>Investigative Findings</h3>
+          {{ OVERVIEW.findings }}
+      </div>
+      {{ OVERVIEW.text }}
+      {{ OVERVIEW.text }}
+    </div>
+    <section>
+      <hr class="yellow">
+      <div class="flexslider">
+        <ul class="slides">
+        {% for slide in SLIDESHOW %}
+          <li>
+            <div class="big-block slider-image">
+              <img alt="Texas City Explosion" src="/assets/images/slideshow/{{ slide.Photo }}">
+            </div>
+            <div class="small-block">
+              <p class="photo-credit">{{slide.Credit}}</p>
+              <p>{{ slide.Caption }}</p>
+            </div>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <hr class="yellow">
+    </section>
+  </div>
 </div>
 {% endblock %}
 

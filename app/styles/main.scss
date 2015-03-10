@@ -16,6 +16,9 @@
 @import 'components/sharelines';
 @import 'components/flexslider';
 
+body{
+  background-color:white;
+}
 .prose h1{
   margin: 0 0 0.6em;
   line-height:1.25em;
@@ -32,5 +35,8 @@
   @include media($default-768){
     @include span-columns(4 of 8);
   }
+}
+#timeline{
+  margin: 1em 0;
 }
 
