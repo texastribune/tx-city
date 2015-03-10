@@ -1,25 +1,24 @@
 $banner-bp: new-breakpoint(min-width 815px);
 
-.banner-image{
-  background-image:url(../assets/images/TexasCity-Banner2.jpg);
-  height: 12em;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #333;
+.banner{
+  height:13em;
   @include media($banner-bp){
     height:300px;
   }
-}
-
-.banner{
-  height: 12em;
-  @include media($banner-bp){
-    height:300px;
+  .banner-image {
+    background-image:url(../assets/images/TexasCity-Banner2.jpg);
+    height:13em;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color:#333;
+    @include media($banner-bp){
+      height:300px;
+    }
   }
   .grand-header {
     h1 {
-      margin-bottom:0.75em;
+      margin-bottom:0.4em;
       @include media($default-560) {
         margin-bottom:0.25em;
       }
@@ -31,11 +30,13 @@ $banner-bp: new-breakpoint(min-width 815px);
       }
     }
     p.subhead {
-      @include media($medium) {
-        font-size:1.3em;
+      margin:0em;
+      font-size:1em;
+      @include media($banner-bp) {
+        font-size:1.25em;
       }
-      @include media($small) {
-        font-size:1.1em;
+      @include media($default-768){
+        margin:1.25em;
       }
     }
   }

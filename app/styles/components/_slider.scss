@@ -1,0 +1,87 @@
+$slider-bp: new-breakpoint(min-width 500px);
+
+.slider {
+  @extend %content-block;
+
+  a .fa-chevron-circle-left,
+  a .fa-chevron-circle-right {
+    color: $dark-blue;
+    font-size: 2em;
+    margin-top: .25em;
+  }
+  img {
+      max-width: 100%;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+
+}
+// SlidesJS Overrides & Base styles
+#slides {
+  display: none
+}
+
+.slidesjs-container {
+  height: 10em;
+  transition: background-color .1s;
+}
+
+.slidesjs-previous,
+.slidesjs-next {
+  margin-right: 1em;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: .5em 0 0;
+  float: right;
+  list-style: none;
+
+  li {
+    float: left;
+    margin: 0 .1em;
+
+    a {
+      color: $dark-seafoam;
+      display: block;
+      float: left;
+      font-size: 1.3em;
+      overflow: hidden;
+      text-decoration: none;
+
+      &:before {
+        content: "\f1db";
+      }
+
+      &:hover {
+        color: $light-seafoam;
+        text-decoration: none;
+      }
+
+      .icon-circle-thin .active {
+        &:before {
+          content: "\f111";
+          color: $dark-seafoam;
+        }
+
+      }
+    }
+
+    .active {
+       &:before {
+        content: "\f111";
+        color: $dark-seafoam;
+      }
+    }
+  }
+
+  a:hover,
+  a:active {
+    color: #9e2020
+  }
+
+  .navbar {
+    overflow: hidden
+  }
+}

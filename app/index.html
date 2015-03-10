@@ -5,6 +5,14 @@
 {% endblock %}
 
 {% block content %}
+<nav id="top-nav">
+  <ul>
+    <li class="selected"><a href="{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
+    <li><a href="{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
+    <li><a href="{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
+    <li><a href="{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
+  </ul>
+</nav>
 <div class="story-content">
   <header class="prose">
     <h1>{{ OVERVIEW.headline }}</h1>
@@ -26,6 +34,39 @@
   </div>
   <section class="prose">
       {{ OVERVIEW.text }}
+  </section>
+</div>
+<div id="timeline">
+  <iframe height="450px" width="100%" frameborder="0" scrolling="no" src="http://graphics.texastribune.org/graphics/tx-city-ten-years/"></iframe>
+</div>
+<div class="story-content">
+  <div class="prose">
+    {{ OVERVIEW.text }}
+    <div class="findings">
+      <h3>Investigative Findings</h3>
+        {{ OVERVIEW.findings }}
+    </div>
+    {{ OVERVIEW.text }}
+    {{ OVERVIEW.text }}
+  </div>
+  <section>
+    <hr class="yellow">
+    <div class="flexslider">
+      <ul class="slides">
+      {% for slide in SLIDESHOW %}
+        <li>
+          <div class="big-block slider-image">
+            <img alt="Texas City Explosion" src="/assets/images/slideshow/{{ slide.Photo }}">
+          </div>
+          <div class="small-block">
+            <p class="photo-credit">{{slide.Credit}}</p>
+            <p>{{ slide.Caption }}</p>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <hr class="yellow">
   </section>
 </div>
 {% endblock %}

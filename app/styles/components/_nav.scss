@@ -1,8 +1,51 @@
-nav ul {
-  margin: 0 0 1em 0;
-}
-nav ul li {
-  display: inline-block;
-  width: 33%;
-  text-align: center;
+#top-nav{
+  @include media($default-560){
+    &.sticky {
+      position:fixed;
+      margin-top:0;
+      top:0;
+      width:100%;
+      max-width:1081px;
+      z-index:1000;
+      li {
+        margin: 0;
+      }
+    }
+  }
+  ul {
+    margin: 0 0 1em 0;
+    li {
+      background-color:#008990;
+      border-bottom:2px solid white;
+      padding: 0.5em;
+      text-align: center;
+      &.selected {
+        background-color:#99d0d3;
+      }
+      a {
+        color:#444;
+        text-transform: uppercase;
+        font-weight:700;
+        cursor:pointer;
+      }
+      @include media($default-560){
+        float:left;
+        width:25%;
+        text-align:center;
+        background-color: white;
+        padding: 0.5em;
+        margin: -1em 0 1em 0;
+        border-bottom:3px solid #99d0d3;
+        &:hover{
+          background-color:#008990;
+        }
+        &.selected:hover {
+          background-color:#99d0d3;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

@@ -1,13 +1,15 @@
 {
   "META": {
-    "project_title": "Texas City: Could It Happen Again?",
-    "project_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "project_title": "Could It Happen Again?",
+    "project_subtitle": "A Texas City explosion killed 15, injured 170 and rattled a community. Petroleum refiners promised change. 10 years later, workers are still dying.",
     "section_1_title": "Overview",
     "section_1_slug": "",
     "section_2_title": "Reform & Enforcement",
     "section_2_slug": "reform",
-    "section_3_title": "Deaths in the Industry",
-    "section_3_slug": "data"
+    "section_3_title": "The People",
+    "section_3_slug": "people",
+    "section_4_title": "Our Data",
+    "section_4_slug": "data"
   },
   "OVERVIEW": {
     "headline": "Texas City rocked by refinery explosion",
@@ -19,8 +21,7 @@
     "video_title": "",
     "video_code": "",
     "video_caption": "",
-    "timeline_code": "",
-    "slideshow_code": ""
+    "findings": "<ul>\n<li>This is our first finding. It is the most important. People will be impressed.</li>\n<li>This is our second finding. It is still pretty important. We are pulling people in!</li>\n<li>This is our last finding. Go out with style - it will be a big one!</li>\n</ul>\n"
   },
   "REFORM": {
     "headline": "Texas City rocked by refinery explosion",
@@ -28,6 +29,8 @@
     "author_1_url": "http://www.houstonchronicle.com/author/mark-collette/",
     "byline_2": "Lise Olsen",
     "author_2_url": "http://www.houstonchronicle.com/author/lise-olsen/",
+    "byline_3": "Jim Malewitz",
+    "author_3_url": "http://www.texastribune.org/about/staff/jim-malewitz",
     "pub_date": "March 22, 2005",
     "shareline_1": "This is a very interesting fact from the story",
     "shareline_2": "This is a very interesting fact from the story",
@@ -47,17 +50,95 @@
     "block_quote_source": "",
     "disclosure": ""
   },
-  "DATA": {
+  "PEOPLE": {
     "headline": "Texas City rocked by refinery explosion",
-    "byline": "Jim Malewitz",
-    "author_url": "http://www.texastribune.org/about/staff/jim-malewitz",
+    "byline": "Lise Olsen",
+    "author_url": "http://www.houstonchronicle.com/author/lise-olsen/",
     "pub_date": "March 22, 2005",
     "shareline_1": "This is a very interesting fact from the story",
     "text": "<p>This is the story itself.</p>\n<p>It’s really interesting. You should read it and share it with all of your friends. If you don’t you’re a bad person.</p>\n<p>Also, aren’t dinosaurs just the coolest? Seriously, who doesn’t love Jurassic Park and some incredibly smart velociraptors. </p>\n",
     "video_title": "",
     "video_code": "",
-    "video_caption": "",
-    "timeline_code": "",
-    "slideshow_code": ""
-  }
+    "video_caption": ""
+  },
+  "DATA": {
+    "headline": "The Data",
+    "byline": "Jim Malewitz",
+    "author_url": "http://www.texastribune.org/about/staff/jim-malewitz",
+    "pub_date": "March 22, 2015",
+    "shareline_1": "This is a very interesting fact from the story",
+    "text": "<p>This is the story itself.</p>\n<p>It’s really interesting. You should read it and share it with all of your friends. If you don’t you’re a bad person.</p>\n<p>Also, aren’t dinosaurs just the coolest? Seriously, who doesn’t love Jurassic Park and some incredibly smart velociraptors. </p>\n"
+  },
+  "SLIDESHOW": [
+    {
+      "Photo": "TexasCity-011.jpg",
+      "Caption": "Firefighters pour water on the smoldering ISOM unit following the explosion that rocked the BP refinery Wednesday, March 23, 2005, in Texas City, Texas.",
+      "Credit": "Brett Coomer, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-001.jpg",
+      "Caption": "Damaged storage tanks and a destroyed trailer are seen by the blast site at the refinery plant in Texas City days after the explosion.",
+      "Credit": "Melissa Phillip, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-002.jpg",
+      "Caption": "Juanita Ramos, widow of victim Art Ramos, embraces Margaret Jasso three days after the explosion. Art Ramos, 59, was a supervisor with Jacob Engineering (a subsidiary of J.E. Merit) working at the BP refinery.",
+      "Credit": "Brett Coomer, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-003.jpg",
+      "Caption": "David Leining, a BP employee, suffered two broken ankles from the explosion. ",
+      "Credit": "Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-004.jpg",
+      "Caption": "A refinery employee reacts after news of deaths at BP refinery in Texas City.",
+      "Credit": "Carlos Javier Sanchez, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-005.jpg",
+      "Caption": "BP employees await further instructions from officials outside of the refinery in Texas City just after the explosion.",
+      "Credit": "Carlos Javier Sanchez, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-006.jpg",
+      "Caption": "A week after the blast, BP's Director of Operations Don Parus tries to keep his composure as he talks to hundreds of BP workers as they pay their respects to those killed.",
+      "Credit": "Carlos Javier Sanchez, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-007.jpg",
+      "Caption": "A devastated mobile unit at BP illustrates the risk associated with such structures.",
+      "Credit": "U.S. Chemical Safety and Hazard Investigation Board"
+    },
+    {
+      "Photo": "TexasCity-008.jpg",
+      "Caption": "Maria Dickinson, of Houston, places flowers at an unofficial memorial in front of the British Petroleum plant in Texas City after the explosion.",
+      "Credit": "Steve Campbel, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-009.jpg",
+      "Caption": "Josh Biscamp,16, and his sister Jessica look out of a shattered window at their home in Texas City after the blast.  Their home is across the from the refinery.",
+      "Credit": "Carlos Javier Sanchez, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-010.jpg",
+      "Caption": "Flags fly at half staff outside the BP refinery in Texas City the day after the explosion.",
+      "Credit": "Carlos Javier Sanchez, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-012.jpg",
+      "Caption": "A BP employee waits near a safety sign outside the Texas City plant.  A memorial service inside the plant began at 1:20 p.m. - the exact time of the blast one week before.",
+      "Credit": "James Nielsen, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-013.jpg",
+      "Caption": "Aerial views of the ISOM unit of the BP plant in Texas City a week after the explosion.",
+      "Credit": "Steve Ueckert, Houston Chronicle"
+    },
+    {
+      "Photo": "TexasCity-014.jpg",
+      "Caption": "A trailer located in the immediate explosion area near the blowdown stack is completely destroyed.",
+      "Credit": "U.S. Chemical Safety and Hazard Investigation Board"
+    }
+  ]
 }

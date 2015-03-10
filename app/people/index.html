@@ -8,16 +8,16 @@
 <nav id="top-nav">
   <ul>
     <li><a href="../{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
-    <li class="selected"><a href="../{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
-    <li><a href="../{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
+    <li><a href="../{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
+    <li class="selected"><a href="../{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
     <li><a href="../{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
   </ul>
 </nav>
 <nav id="sticky-nav"></nav>
 <div class="story-content">
   <header class="prose">
-    <h1>{{ REFORM.headline }}</h1>
-    <p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a>, <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a> and <a href="{{ REFORM.author_3_url}} ">{{ REFORM.byline_3 }}</a> | {{ REFORM.pub_date }}</p>
+    <h1>{{ PEOPLE.headline }}</h1>
+    <p class="byline">By <a href="{{ PEOPLE.author_url}} ">{{ PEOPLE.byline }}</a> | {{ PEOPLE.pub_date }}</p>
   </header>
   <div class="sharelines">
     <h3>Sharelines</h3>
@@ -29,12 +29,12 @@
         <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=&redirect_uri=" title="share on Facebook" class="social-share" target="_blank">
         <i class="fa fa-facebook"></i>
         </a>
-        <p>{{ REFORM.shareline_1 }}</p>
+        <p>{{ PEOPLE.shareline_1 }}</p>
       </li>
     </ul>
   </div>
   <section class="prose">
-      {{ REFORM.text }}
+      {{ PEOPLE.text }}
   </section>
 </div>
 {% endblock %}

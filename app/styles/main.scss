@@ -10,19 +10,27 @@
 @import 'helpers/theme';
 @import 'helpers/ads';
 
+@import 'components/header';
 @import 'components/banner';
 @import 'components/nav';
 @import 'components/sharelines';
+@import 'components/flexslider';
 
-.branding {
-  .sub-text {
-    color:white;
-    text-transform: uppercase;
-    vertical-align: top;
-    line-height: 1.8em;
-    font-size: 0.8em;
+.prose h1{
+  margin: 0 0 0.6em;
+  line-height:1.25em;
+}
+.findings{
+  border-top:1px solid #ffc200;
+  border-bottom: 1px solid #ffc200;
+  position:relative;
+  margin: 0.5em 0;
+  ul{
+    margin:1em;
+    padding-left:2em;
   }
-  img {
-    padding:0 0.5em;
+  @include media($default-768){
+    @include span-columns(4 of 8);
   }
 }
+

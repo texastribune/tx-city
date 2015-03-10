@@ -5,10 +5,19 @@
 {% endblock %}
 
 {% block content %}
+<nav id="top-nav">
+  <ul>
+    <li><a href="../{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
+    <li><a href="../{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
+    <li><a href="../{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
+    <li class="selected"><a href="../{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
+  </ul>
+</nav>
+<nav id="sticky-nav"></nav>
 <div class="story-content">
   <header class="prose">
     <h1>{{ DATA.headline }}</h1>
-    <p class="byline">By <a href="{{ OVERVIEW.author_url}} ">{{ DATA.byline }}</a> | {{ DATA.pub_date }}</p>
+    <p class="byline">By <a href="{{ DATA.author_url}} ">{{ DATA.byline }}</a> | {{ DATA.pub_date }}</p>
   </header>
   <div class="sharelines">
     <h3>Sharelines</h3>
