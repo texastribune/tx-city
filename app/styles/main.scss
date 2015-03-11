@@ -7,7 +7,6 @@
 @import 'helpers/colors';
 @import 'helpers/mixins';
 @import 'helpers/typography';
-@import 'helpers/theme';
 @import 'helpers/ads';
 
 @import 'components/header';
@@ -16,21 +15,46 @@
 @import 'components/sharelines';
 @import 'components/flexslider';
 
-body{
-  background-color:white;
+hr{
+  margin-bottom:1.5em;
 }
-.prose h1{
-  margin: 0 0 0.6em;
-  line-height:1.25em;
+.prose {
+  h1{
+    margin: 0 0 0.6em;
+    line-height:1.25em;
+  }
+  h2 {
+    margin: 0 0.5em;
+    line-height:1em;
+  }
+  h3{
+    font-size:1em;
+  }
+  @include media($default-560){
+    h1{
+      font-size:1.7em;
+    }
+  }
+  &.info {
+    border-top: 1px solid $tribune-yellow;
+    p {
+      color:$text-gray;
+    }
+  }
 }
 .findings{
-  border-top:1px solid #ffc200;
-  border-bottom: 1px solid #ffc200;
+  border-top:1px solid $tribune-yellow;
+  border-bottom: 1px solid $tribune-yellow;
   position:relative;
   margin: 0.5em 0;
   ul{
     margin:1em;
-    padding-left:2em;
+    line-height:1.4em;
+    font-weight:400;
+    font-size:0.9em;
+    li {
+      margin-bottom:1em;
+    }
   }
   @include media($default-768){
     @include span-columns(4 of 8);
@@ -38,5 +62,26 @@ body{
 }
 #timeline{
   margin: 1em 0;
+}
+.box-ad {
+  text-align:center;
+  @include media($default-768){
+    float:right;
+    margin-left:1em;
+  }
+}
+.sub-navigation {
+  border-top: 1px solid $tribune-yellow;
+  ul {
+    font-weight:400;
+  }
+  a {
+    font-size:1.1em;
+    font-weight:700;
+    text-transform: uppercase;
+  }
+  &.no-line{
+    border-top:0px;
+  }
 }
 

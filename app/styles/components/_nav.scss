@@ -1,11 +1,12 @@
 #top-nav{
+  background-color:white;
   @include media($default-560){
     &.sticky {
       position:fixed;
       margin-top:0;
       top:0;
+      border-bottom:2px solid $href-teal;
       width:100%;
-      max-width:1081px;
       z-index:1000;
       li {
         margin: 0;
@@ -13,49 +14,46 @@
     }
   }
   ul {
-    margin: 0 0 1em 0;
-    li {
-      background-color:#99d0d3;
-      border-bottom:2px solid white;
-      padding: 0.5em;
-      text-align: center;
-      &.selected {
-        background-color:#008990;
-        a{
-          color:white;
-        }
-      }
-      a {
-        color:#333;
-        text-transform: uppercase;
-        letter-spacing:0.03em;
-        font-weight:400;
-        cursor:pointer;
-        &:hover {
+    max-width:1081px;
+    margin:0 auto 1em auto;
+    border-bottom:2px solid $href-teal;
+    a {
+      color:#333;
+      text-transform:uppercase;
+      letter-spacing: 0.03em;
+      font-weight:400;
+      cursor:pointer;
+      &:hover {
           text-decoration: none;
-        }
       }
-      @include media($default-560){
-        float:left;
-        width:25%;
+      li {
+        background-color:#99d0d3;
+        border-bottom:2px solid white;
+        padding: 0.5em;
         text-align:center;
-        background-color: white;
-        padding: 1em 0.5em;
-        margin: -1em 0 1em 0;
-        border-bottom: 2px solid #008990;
-        a {
-          color:#333;
-        }
-        &:hover{
-          background-color:#008990;
-          a {
-            color:white;
-          }
-        }
         &.selected {
-          background-color:#99d0d3;
-          a {
+          color:white;
+          background-color:#008990;
+        }
+        @include media($default-560){
+          float:left;
+          width:25%;
+          text-align:center;
+          background-color:white;
+          padding:1em 0.5em;
+          margin: 0;
+          border-bottom:0px;
+          &.selected {
+            background-color:#99d0d3;
             color:#333;
+            &:hover {
+              background-color:#99d0d3;
+              color:#333;
+            }
+          }
+          &:hover {
+            color:white;
+            background-color:#008990;
           }
         }
       }

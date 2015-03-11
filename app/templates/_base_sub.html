@@ -9,6 +9,36 @@
   <link rel="stylesheet" href="../styles/main.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
   {% endblock %}
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+    (function() {
+      var gads = document.createElement('script');
+      gads.async = true;
+      gads.type = 'text/javascript';
+      var useSSL = 'https:' == document.location.protocol;
+      gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(gads, node);
+    })();
+
+    googletag.cmd.push(function() {
+      googletag.pubads().setTargeting('tribpedia','txcity');
+
+      var mapping = googletag.sizeMapping().addSize([780, 140], [728, 90]).build();
+
+    googletag.defineSlot('/5805113/TexasTribune_Content_StoryPage_BTF_RightRail1_MediumRectangle_300x250', [300, 250], 'div-gpt-ad-1406570316312-1')
+      .addService(googletag.pubads());
+
+    googletag.defineSlot('/5805113/TexasTribune_Content_StoryLanding_BTF_Footer_Leaderboard_728x90', [300, 100], 'div-gpt-ad-1406570316312-2')
+      .defineSizeMapping(mapping)
+      .addService(googletag.pubads());
+
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+  </script>
 </head>
 <body>
   <header class="masthead app-bar promote-layer">
@@ -19,18 +49,30 @@
         <a href="//www.houstonchronicle.com"><img class="chron-logo desktop" alt="The Houston Chronicle" src="../assets/images/HC-white.png"></a>
       </div>
     </div>
+    {% block nav %}{%endblock %}
   </header>
   <section class="banner">
     <div class="banner-image"></div>
     <header class="grand-header">
       <div class="story-container">
         <h1><a href="">{{ META.project_title}}</a></h1>
-        <p class="subhead">{{ META.project_subtitle}}</p>
+        {% block headline %}{%endblock %}
       </div>
     </header>
   </section>
   <div class="story-container">
     {% block content %}{% endblock %}
+    <div class="story-content prose info">
+      <h3>About</h3>
+      <p>This website was developed by news apps developer <a href="http://www.texastribune.org/about/staff/jolie-mccullough">Jolie McCullough</a>. The Texas Tribune is a nonpartisan, nonprofit media organization that promotes civic engagement and discourse on public policy, politics, government and other matters of statewide concern.</p>
+    </div>
+  </div>
+  <div class="ad-container banner-ad bottom" id="div-gpt-ad-1406570316312-2">
+    <script>
+      googletag.cmd.push(function() {
+        googletag.display('div-gpt-ad-1406570316312-2');
+      });
+    </script>
   </div>
   <footer class="footer">
     <div class="footer-container">

@@ -4,21 +4,26 @@
 {{ super() }}
 {% endblock %}
 
-{% block content %}
+{%block nav %}
 <nav id="top-nav">
   <ul>
-    <li><a href="../{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
-    <li class="selected"><a href="../{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
-    <li><a href="../{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
-    <li><a href="../{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
+    <a href="../{{META.section_1_slug }}"><li>{{ META.section_1_title }}</li></a>
+    <a href="../{{META.section_2_slug }}"><li class="selected">{{ META.section_2_title }}</li></a>
+    <a href="../{{META.section_3_slug }}"><li>{{ META.section_3_title }}</li></a>
+    <a href="../{{META.section_4_slug }}"><li>{{ META.section_4_title }}</li></a>
   </ul>
 </nav>
-<nav id="sticky-nav"></nav>
+{% endblock %}
+
+
+{%block headline %}
+<p class="subhead">{{REFORM.headline }}</p>
+<p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a>, <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a> and <a href="{{ REFORM.author_3_url}} ">{{ REFORM.byline_3 }}</a> | {{ REFORM.pub_date }}</p>
+{%endblock%}
+
+
+{% block content %}
 <div class="story-content">
-  <header class="prose">
-    <h1>{{ REFORM.headline }}</h1>
-    <p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a>, <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a> and <a href="{{ REFORM.author_3_url}} ">{{ REFORM.byline_3 }}</a> | {{ REFORM.pub_date }}</p>
-  </header>
   <div class="sharelines">
     <h3>Sharelines</h3>
     <ul>
@@ -35,6 +40,14 @@
   </div>
   <section class="prose">
       {{ REFORM.text }}
+  </section>
+  <section class="sub-navigation prose">
+    <h3>More in this feature</h3>
+    <ul>
+      <li><a href="{{META.section_1_slug }}">An overview of the project</a></li>
+      <li><a href="{{META.section_3_slug }}">Video interviews with the people who survived the blast</a></li>
+      <li><a href="{{META.section_4_slug }}">A detailed list of refinery accidents</a></li>
+    </ul>
   </section>
 </div>
 {% endblock %}

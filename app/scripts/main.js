@@ -29,7 +29,7 @@ $(window).on( 'orientationchange', function() {
 
 //sets nav to sticky at certain height
 $(window).scroll(function () {
-  var navHeight = $('.banner').height() + $('.masthead').height();
+  var navHeight = $('.masthead .menu-container').height();
   if( $(window).scrollTop() > navHeight && !($('#top-nav').hasClass('sticky'))){
     $('#top-nav').addClass('sticky');
   } else if ($(window).scrollTop() < navHeight){

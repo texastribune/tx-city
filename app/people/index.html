@@ -4,21 +4,26 @@
 {{ super() }}
 {% endblock %}
 
-{% block content %}
+{%block nav %}
 <nav id="top-nav">
   <ul>
-    <li><a href="../{{META.section_1_slug }}">{{ META.section_1_title }}</a></li>
-    <li><a href="../{{META.section_2_slug }}">{{ META.section_2_title }}</a></li>
-    <li class="selected"><a href="../{{META.section_3_slug }}">{{ META.section_3_title }}</a></li>
-    <li><a href="../{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
+    <a href="../{{META.section_1_slug }}"><li>{{ META.section_1_title }}</li></a>
+    <a href="../{{META.section_2_slug }}"><li>{{ META.section_2_title }}</li></a>
+    <a href="../{{META.section_3_slug }}"><li class="selected">{{ META.section_3_title }}</li></a>
+    <a href="../{{META.section_4_slug }}"><li>{{ META.section_4_title }}</li></a>
   </ul>
 </nav>
-<nav id="sticky-nav"></nav>
+{% endblock %}
+
+
+{%block headline %}
+<p class="subhead">{{PEOPLE.headline }}</p>
+<p class="byline">By <a href="{{ PEOPLE.author_url}} ">{{ PEOPLE.byline }}</a> and <a href="{{ PEOPLE.author_2_url}} ">{{ PEOPLE.byline_2 }}</a> | {{ PEOPLE.pub_date }}</p>
+{%endblock%}
+
+
+{% block content %}
 <div class="story-content">
-  <header class="prose">
-    <h1>{{ PEOPLE.headline }}</h1>
-    <p class="byline">By <a href="{{ PEOPLE.author_url}} ">{{ PEOPLE.byline }}</a> | {{ PEOPLE.pub_date }}</p>
-  </header>
   <div class="sharelines">
     <h3>Sharelines</h3>
     <ul>
@@ -35,6 +40,14 @@
   </div>
   <section class="prose">
       {{ PEOPLE.text }}
+  </section>
+  <section class="sub-navigation prose">
+    <h3>More in this feature</h3>
+    <ul>
+      <li><a href="{{META.section_1_slug }}">An overview of the project</a></li>
+      <li><a href="{{META.section_2_slug }}">An in-depth look at how the refinery industry has changed</a></li>
+      <li><a href="{{META.section_4_slug }}">A detailed list of refinery accidents</a></li>
+    </ul>
   </section>
 </div>
 {% endblock %}
