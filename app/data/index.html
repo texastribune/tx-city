@@ -13,7 +13,6 @@
     <li class="selected"><a href="../{{META.section_4_slug }}">{{ META.section_4_title }}</a></li>
   </ul>
 </nav>
-<nav id="sticky-nav"></nav>
 <div class="story-content">
   <header class="prose">
     <h1>{{ DATA.headline }}</h1>
@@ -34,7 +33,31 @@
     </ul>
   </div>
   <section class="prose">
-      {{ DATA.text }}
+    {{ DATA.text }}
+    {% for incident in DB %}
+      <div class="incident">
+        <p class="date">{{incident.Date}}</p>
+        <h3>{{incident.Facility}}</h3>
+        <h4>{{incident.Company}}</h4>
+        <p class="location">{{incident.City}}, {{incident.State}}</p>
+        <div class="details">
+          <div class="killed">
+            <h4>Number Killed</h4>
+            <p>{{incident.Dead}}</p>
+          </div>
+          <div class="names">
+            <h4>The Deceased</h4>
+            <p>{{incident.Names}}</p>
+          </div>
+        </div>
+        <h4>Summary of incident</h4>
+        <p>{{incident.Summary}}</p>
+        <p class="links">
+          <a href="{{incident.OSHA_Link}}">OSHA Report</a> | <a href="{{incident.News_Link}}">Article from {{incident.News_Source}}</a>
+        </p>
+      </div>
+      <hr>
+    {% endfor %}
   </section>
 </div>
 {% endblock %}

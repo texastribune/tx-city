@@ -2,6 +2,7 @@
   "google_spreadsheet_key": "19nc1g4HT8uuOTRJ8ScqBF15Vn8E6mdvkluS8luGIOCo",
   "google_spreadsheet_type": "keyvalue",
   "sheet_overrides": {
-    "SLIDESHOW": "objectlist"
+    "SLIDESHOW": "objectlist",
+    "DB": "objectlist"
   }
 }
