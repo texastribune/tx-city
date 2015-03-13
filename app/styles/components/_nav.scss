@@ -1,11 +1,68 @@
-#top-nav{
-  @include media($default-560){
+$nav-bp: new-breakpoint(min-width 900px);
+
+.menu-icon {
+  display: block;
+  float: right;
+  margin-top:-1em;
+  padding: 2em 1em 1.5em 1em;
+  @include media($small-header){
+    padding: 2em 1em 2em 1em;
+  }
+  &.x {
+    background-color: #99d0d3;
+    &.home{
+      background-color: $href-teal;
+    }
+  }
+  span {
+    background-color: $white;
+    display: block;
+    height: .2em;
+    margin: 0 auto;
+    position: relative;
+    transition-delay: .2s;
+    transition-duration: 0;
+    width: 1.75em;
+
+    &:before,
+    &:after {
+      background-color: $white;
+      content: '';
+      display: block;
+      height: .2em;
+      position: absolute;
+      transition-delay: .2s, 0;
+      transition-duration: .2s;
+      transition-property: margin, transform;
+      width: 1.75em;
+    }
+
+    &:before {
+      margin-top: -.5em;
+    }
+
+    &:after {
+      margin-top: .5em;
+    }
+  }
+  @include media($small-header){
+    margin-left:2em;
+  }
+  @include media($default-768){
+    display:none;
+  }
+}
+#menu{
+  background-color:white;
+  display:none;
+  @include media($default-768){
+    display:block;
     &.sticky {
       position:fixed;
       margin-top:0;
       top:0;
+      border-bottom:2px solid $href-teal;
       width:100%;
-      max-width:1081px;
       z-index:1000;
       li {
         margin: 0;
@@ -13,52 +70,57 @@
     }
   }
   ul {
-    margin: 0 0 1em 0;
-    li {
-      background-color:#99d0d3;
-      border-bottom:2px solid white;
-      padding: 0.5em;
-      text-align: center;
-      &.selected {
-        background-color:#008990;
-        a{
-          color:white;
-        }
-      }
-      a {
-        color:#333;
-        text-transform: uppercase;
-        letter-spacing:0.03em;
-        font-weight:400;
-        cursor:pointer;
-        &:hover {
+    max-width:1081px;
+    margin:0 auto 0 auto;
+    a {
+      color:#333;
+      text-transform:uppercase;
+      letter-spacing: 0.03em;
+      font-weight:400;
+      cursor:pointer;
+      &:hover {
           text-decoration: none;
-        }
       }
-      @include media($default-560){
-        float:left;
-        width:25%;
-        text-align:center;
-        background-color: white;
+      &:first-child li {
+        border-top:0px;
+      }
+      li {
+        background-color:#99d0d3;
+        border-top:2px solid white;
         padding: 1em 0.5em;
-        margin: -1em 0 1em 0;
-        border-bottom: 2px solid #008990;
-        a {
-          color:#333;
-        }
-        &:hover{
-          background-color:#008990;
-          a {
-            color:white;
-          }
-        }
+        text-align:center;
+        font-size:0.9em;
         &.selected {
-          background-color:#99d0d3;
-          a {
+          color:white;
+          background-color:#008990;
+        }
+        @include media($default-768){
+          float:left;
+          width:25%;
+          text-align:center;
+          background-color:white;
+          margin: 0;
+          border-top:0px;
+          &.selected {
+            background-color:#99d0d3;
             color:#333;
+            &:hover {
+              background-color:#99d0d3;
+              color:#333;
+            }
           }
+          &:hover {
+            color:white;
+            background-color:#008990;
+          }
+        }
+        @include media($nav-bp){
+          font-size:1em;
         }
       }
     }
+  }
+  &.menu-open {
+    display: block;
   }
 }

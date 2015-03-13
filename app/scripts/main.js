@@ -1,38 +1,29 @@
 'use strict';
 
-// Set element height based on height of reference element
+$(window).load(function() {
+  // Menu
+  var $menuButton = $('#menu-button');
+  var $menuNav = $('#menu');
 
-function sliderHeight() {
-  var maxHeight = Math.max.apply(null, $('div.slidesjs-slide').map(function (){
-    return $(this).height();
-  }).get());
-  $('.slidesjs-container').css('height', maxHeight + 16);
-  $('.slidesjs-control').css('height', maxHeight + 32);
-}
+  $menuButton.on('click', function(e) {
+    e.preventDefault();
 
-$(document).ready(function() {
-  $('.flexslider').flexslider({
-      slideshow: false,
-      prevText: ' ',
-      nextText: ' '
-    });
-});
+    if ($menuNav.hasClass('menu-open')) {
+      $menuButton.removeClass('x');
+    } else {
+      $menuButton.addClass('x');
+    }
 
-// Reset heights/positions on window resize
-$(window).resize(function() {
-  sliderHeight();
-});
-
-$(window).on( 'orientationchange', function() {
-  sliderHeight();
+    $menuNav.toggleClass('menu-open');
+  });
 });
 
 //sets nav to sticky at certain height
 $(window).scroll(function () {
-  var navHeight = $('.banner').height() + $('.masthead').height();
-  if( $(window).scrollTop() > navHeight && !($('#top-nav').hasClass('sticky'))){
-    $('#top-nav').addClass('sticky');
+  var navHeight = $('.masthead .menu-container').height();
+  if( $(window).scrollTop() > navHeight && !($('#menu').hasClass('sticky'))){
+    $('#menu').addClass('sticky');
   } else if ($(window).scrollTop() < navHeight){
-    $('#top-nav').removeClass('sticky');
+    $('#menu').removeClass('sticky');
   }
 });

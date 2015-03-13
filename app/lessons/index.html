@@ -1,0 +1,56 @@
+{% extends "templates/_base_sub.html" %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{%block nav %}
+<nav id="menu">
+  <ul>
+    <a href="../{{META.section_1_slug }}"><li>{{ META.section_1_title }}</li></a>
+    <a href="../{{META.section_2_slug }}"><li class="selected">{{ META.section_2_title }}</li></a>
+    <a href="../{{META.section_3_slug }}"><li>{{ META.section_3_title }}</li></a>
+    <a href="../{{META.section_4_slug }}"><li>{{ META.section_4_title }}</li></a>
+  </ul>
+</nav>
+{% endblock %}
+
+
+{%block headline %}
+<p class="subhead">{{REFORM.headline }}</p>
+<p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a>, <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a> and <a href="{{ REFORM.author_3_url}} ">{{ REFORM.byline_3 }}</a> | {{ REFORM.pub_date }}</p>
+{%endblock%}
+
+
+{% block content %}
+<div class="story-content">
+  <div class="sharelines">
+    <ul>
+      <li>
+        <a href="https://twitter.com/intent/tweet?via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+        <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=&redirect_uri=" title="share on Facebook" class="social-share" target="_blank">
+        <i class="fa fa-facebook"></i>
+        </a>
+        <p>{{ REFORM.shareline_1 }}</p>
+      </li>
+    </ul>
+  </div>
+  <section class="prose">
+      {{ REFORM.text }}
+  </section>
+  <section class="sub-navigation prose">
+    <h3>More in this feature</h3>
+    <ul>
+      <li><a href="{{META.section_1_slug }}">{{META.section_1_title }}</a> {{OVERVIEW.headline}}</li>
+      <li><a href="{{META.section_3_slug }}">{{META.section_3_title }}</a> {{VIDEO.headline}}</li>
+      <li><a href="{{META.section_4_slug }}">{{META.section_4_title }}</a> {{DATA.headline}}</li>
+    </ul>
+  </section>
+</div>
+{% endblock %}
+
+{% block script %}
+{{ super()}}
+{% endblock %}

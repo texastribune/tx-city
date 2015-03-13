@@ -4,14 +4,14 @@ $small-header: new-breakpoint(max-width 450px);
 .masthead {
   .branding {
     padding: 0.5em 0;
-    @include media($default-560){
-      padding: 0.25em 0;
-    }
     .sub-text {
       color:white;
       vertical-align: text-top;
       display: inline;
       line-height:0.7em;
+      @include media($med-header){
+        line-height:0em;
+      }
       @include media($small-header){
         display:none;
       }
@@ -20,26 +20,35 @@ $small-header: new-breakpoint(max-width 450px);
         font-size: 1.25em;
       }
     }
-    .trib-logo{
-      height: 1em;
-      @include media($default-768){
-        height:1.25em;
+    a {
+      padding:0;
+      margin:0;
+      .trib-logo{
+        height: 1.1em;
+        @include media($default-768){
+          height:1.25em;
+        }
+        @include media($small-header){
+          margin-bottom:0.25em;
+        }
+      }
+      .chron-logo{
+        height: 1.5em;
+        @include media($default-768){
+          height: 1.75em;
+        }
       }
       @include media($small-header){
-        margin-bottom:0.25em;
-      }
-    }
-    .chron-logo{
-      height: 1.4em;
-      @include media($default-768){
-        height: 1.75em;
+        float:left;
       }
     }
     img {
       padding:0 0.4em;
+      @include media($med-header){
+        margin:0.3em 0;
+      }
       @include media($small-header){
         display: block;
-        margin: 0em auto 0em auto;
       }
     }
   }
