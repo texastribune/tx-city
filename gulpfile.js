@@ -26,7 +26,6 @@ gulp.task('jshint', function() {
 gulp.task('scripts', ['jshint'], function() {
   return gulp.src('app/scripts/**/*.js')
     .pipe($.uglify())
-    .pipe($.gzip({append: false}))
     .pipe(gulp.dest('dist/scripts'))
     .pipe($.size({title: 'scripts'}));
 });
@@ -45,7 +44,6 @@ gulp.task('styles', function () {
   .pipe(gulp.dest('.tmp/styles'))
   .pipe($.if('*.css', reload({stream: true})))
   .pipe($.if('*.css', $.csso()))
-  .pipe($.gzip({append: false}))
   .pipe(gulp.dest('dist/styles'))
   .pipe($.size({title: 'styles'}));
 });
@@ -71,7 +69,6 @@ gulp.task('templates', function() {
     .pipe(nunjuckified)
     .pipe(gulp.dest('.tmp'))
     // .pipe($.minifyHtml())
-    .pipe($.gzip({append: false}))
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'html'}));
 });
