@@ -65,10 +65,10 @@ gulp.task('templates', function() {
     return nunjucks.renderString(code.toString(), data);
   });
 
-  return gulp.src(['app/**/{*,!_*}.html', '!app/**/_*.html'])
+  return gulp.src(['app/**/*.html', '!app/**/_*.html'])
     .pipe(nunjuckified)
     .pipe(gulp.dest('.tmp'))
-    .pipe($.minifyHtml())
+    // .pipe($.minifyHtml())
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'html'}));
 });

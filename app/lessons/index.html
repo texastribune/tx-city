@@ -4,7 +4,7 @@
 {{ super() }}
 {% endblock %}
 
-{%block nav %}
+{% block nav %}
 <nav id="menu">
   <ul>
     <a href="../{{META.section_1_slug }}"><li>{{ META.section_1_title }}</li></a>
@@ -16,10 +16,10 @@
 {% endblock %}
 
 
-{%block headline %}
+{% block headline %}
 <p class="subhead">{{REFORM.headline }}</p>
 <p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a>, <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a> and <a href="{{ REFORM.author_3_url}} ">{{ REFORM.byline_3 }}</a> | {{ REFORM.pub_date }}</p>
-{%endblock%}
+{% endblock %}
 
 
 {% block content %}
@@ -52,5 +52,5 @@
 {% endblock %}
 
 {% block script %}
-{{ super()}}
+{{ super() }}
 {% endblock %}
