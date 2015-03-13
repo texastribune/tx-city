@@ -2,24 +2,24 @@ $banner-bp: new-breakpoint(min-width 815px);
 
 .banner{
   height:15em;
-  @include media($banner-bp){
+  @include media($banner-bp) {
     height:400px;
   }
-  @include media($default-768){
+  @include media($default-768) {
     border-top:2px solid $href-teal;
   }
   .banner-image {
-    background-image:url(../assets/images/TexasCity-Banner_sml.jpg);
+    background-image:url("../assets/images/TexasCity-Banner_sml.jpg");
     height:15em;
     width:100%;
     background-repeat:no-repeat;
     background-position:center center;
     background-color:#333;
-    @include media($banner-bp){
+    @include media($banner-bp) {
       height:400px;
     }
-    @include media($default-560){
-      background-image:url(../assets/images/TexasCity-Banner.jpg);
+    @include media($default-560) {
+      background-image:url("../assets/images/TexasCity-Banner.jpg");
     }
   }
   .grand-header {
@@ -45,7 +45,7 @@ $banner-bp: new-breakpoint(min-width 815px);
         font-size:1.25em;
         text-shadow: black 2px 2px 0;
         margin:1em 0.5em;
-        @include media($default-560){
+        @include media($default-560) {
           font-size:1.75em;
         }
         @include media($banner-bp) {
@@ -56,7 +56,7 @@ $banner-bp: new-breakpoint(min-width 815px);
         letter-spacing: 0.03em;
         font-size:0.9em;
         margin-bottom:0.5em;
-        @include media($default-560){
+        @include media($default-560) {
           font-size:1.25em;
           margin-bottom:1.5em;
         }
