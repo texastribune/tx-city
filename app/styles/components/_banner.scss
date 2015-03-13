@@ -9,7 +9,7 @@ $banner-bp: new-breakpoint(min-width 815px);
     border-top:2px solid $href-teal;
   }
   .banner-image {
-    background-image:url(../assets/images/TexasCity-Banner.jpg);
+    background-image:url(../assets/images/TexasCity-Banner_sml.jpg);
     height:15em;
     width:100%;
     background-repeat:no-repeat;
@@ -17,6 +17,9 @@ $banner-bp: new-breakpoint(min-width 815px);
     background-color:#333;
     @include media($banner-bp){
       height:400px;
+    }
+    @include media($default-560){
+      background-image:url(../assets/images/TexasCity-Banner.jpg);
     }
   }
   .grand-header {

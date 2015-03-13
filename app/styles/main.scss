@@ -82,7 +82,7 @@ hr{
   border-top:1px solid $tribune-yellow;
   border-bottom: 1px solid $tribune-yellow;
   position:relative;
-  margin: 0.5em 0;
+  margin: 1em 0;
   ul{
     margin:1em;
     line-height:1.4em;
@@ -93,7 +93,10 @@ hr{
     }
   }
   @include media($default-768){
-    @include span-columns(4 of 8);
+    margin:0.5em 0;
+    float:right;
+    width:47%;
+    margin-left:3%
   }
 }
 #timeline{
