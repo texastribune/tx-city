@@ -2,6 +2,7 @@
 @import 'bower_components/neat/app/assets/stylesheets/neat';
 @import 'bower_components/newsapps-styles/init-helpers';
 @import 'bower_components/newsapps-styles/initialize';
+@import 'bower_components/newsapps-styles/layout/components/tables';
 
 @import 'helpers/grid';
 @import 'helpers/colors';
@@ -13,10 +14,14 @@
 @import 'components/banner';
 @import 'components/nav';
 @import 'components/sharelines';
+@import 'components/data';
 @import 'components/flexslider';
 
 hr{
   margin-bottom:1.5em;
+}
+.clearfix {
+  clear:both;
 }
 .prose {
   h1{
@@ -39,6 +44,37 @@ hr{
     border-top: 1px solid $tribune-yellow;
     p {
       color:$text-gray;
+    }
+    h3{
+      margin:1em 0;
+    }
+    h4{
+      color:$text-gray;
+      border-bottom: 1px solid $line-gray;
+      font-style:italic;
+    }
+    ul {
+      font: 400 .875em Helvetica;
+      line-height: 1.875em;
+      text-align: left;
+      list-style: none;
+      font-size: 1em;
+      padding: 0em;
+      li {
+        font: 400 1em Georgia;
+        line-height: 1.4em;
+        margin-bottom:1.25em;
+        @include media($default-768){
+          @include span-columns(4 of 8);
+          margin-right:0;
+        }
+        .handle {
+          font: 300 .95em Helvetica;
+        }
+        p {
+          margin-bottom:0em;
+        }
+      }
     }
   }
 }
@@ -76,7 +112,7 @@ hr{
     font-weight:400;
   }
   a {
-    font-size:1.1em;
+    letter-spacing: 0.05em;
     font-weight:700;
     text-transform: uppercase;
   }

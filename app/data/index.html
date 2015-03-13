@@ -5,7 +5,7 @@
 {% endblock %}
 
 {%block nav %}
-<nav id="top-nav">
+<nav id="menu">
   <ul>
     <a href="../{{META.section_1_slug }}"><li>{{ META.section_1_title }}</li></a>
     <a href="../{{META.section_2_slug }}"><li>{{ META.section_2_title }}</li></a>
@@ -24,7 +24,6 @@
 {% block content %}
 <div class="story-content">
   <div class="sharelines">
-    <h3>Sharelines</h3>
     <ul>
       <li>
         <a href="https://twitter.com/intent/tweet?via=texastribune" title="share on Twitter" class="social-share" target="_blank">
@@ -39,37 +38,64 @@
   </div>
   <section class="prose">
     {{ DATA.text }}
+    <h2>Incidents</h2>
     {% for incident in DB %}
       <div class="incident">
-        <p class="date">{{incident.Date}}</p>
-        <h3>{{incident.Facility}}</h3>
-        <h4>{{incident.Company}}</h4>
-        <p class="location">{{incident.City}}, {{incident.State}}</p>
-        <div class="details">
-          <div class="killed">
-            <h4>Number Killed</h4>
-            <p>{{incident.Dead}}</p>
-          </div>
-          <div class="names">
-            <h4>The Deceased</h4>
-            <p>{{incident.Names}}</p>
-          </div>
+        <div class="top-details">
+          <p class="date">{{incident.Date}}</p>
+          <p class="location">{{incident.City}}, {{incident.State}}</p>
+          <p class="company">{{incident.Company}}</p>
         </div>
-        <h4>Summary of incident</h4>
-        <p>{{incident.Summary}}</p>
-        <p class="links">
-          <a href="{{incident.OSHA_Link}}">OSHA Report</a> | <a href="{{incident.News_Link}}">Article from {{incident.News_Source}}</a>
-        </p>
-      </div>
-      <hr>
+        <div class="bottom-details">
+          <div class="deaths">
+            <div class="number">
+            {% if incident.Dead < 10 %}
+              0{{incident.Dead}}
+            {% else %}
+              {{incident.Dead}}
+            {% endif %}
+            </div>
+            {% if incident.Dead == 1 %}
+              <p>Death</p>
+            {% else %}
+              <p>Deaths</p>
+            {% endif %}
+          </div>
+          <div class="details">
+            {% if incident.Names %}
+              <div class="names">
+                <h4>Deceased</h4>
+                <p>{{incident.Names}}</p>
+              </div>
+            {% endif %}
+            <h4>Incident Summary</h4>
+            <p>{{incident.Summary}}</p>
+            <h4>More Information</h4>
+            <ul class="links">
+              {% if incident.OSHA_Link %}
+                <li><a href="{{incident.OSHA_Link}}">OSHA Report</a></li>
+              {% endif %}
+              {% if incident.News_Link %}
+                <li><a href="{{incident.News_Link}}">
+                  {% if incident.News_Source %}
+                    Article from {{incident.News_Source}}
+                  {% else %}
+                    News Article
+                  {% endif %}
+                </a></li>
+              {% endif %}
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
     {% endfor %}
   </section>
   <section class="sub-navigation prose">
     <h3>More in this feature</h3>
     <ul>
-      <li><a href="{{META.section_1_slug }}">{{META.section_1_title}}:</a> </li>
-      <li><a href="{{META.section_2_slug }}">{{META.section_2_title}}:</a> An in-depth look at how the refinery industry has changed</li>
-      <li><a href="{{META.section_3_slug }}">{{META.section_3_title}}:</a> Video interviews with the people who survived the blast</li>
+      <li><a href="{{META.section_1_slug }}">{{META.section_1_title}}</a> {{OVERVIEW.headline}}</li>
+      <li><a href="{{META.section_2_slug }}">{{META.section_2_title}}</a> {{REFORM.headline}}</li>
+      <li><a href="{{META.section_3_slug }}">{{META.section_3_title}}</a> {{VIDEO.headline}}</li>
     </ul>
   </section>
 </div>

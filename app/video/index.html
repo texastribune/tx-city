@@ -5,7 +5,7 @@
 {% endblock %}
 
 {%block nav %}
-<nav id="top-nav">
+<nav id="menu">
   <ul>
     <a href="../{{META.section_1_slug }}"><li>{{ META.section_1_title }}</li></a>
     <a href="../{{META.section_2_slug }}"><li>{{ META.section_2_title }}</li></a>
@@ -17,15 +17,14 @@
 
 
 {%block headline %}
-<p class="subhead">{{PEOPLE.headline }}</p>
-<p class="byline">By <a href="{{ PEOPLE.author_url}} ">{{ PEOPLE.byline }}</a> and <a href="{{ PEOPLE.author_2_url}} ">{{ PEOPLE.byline_2 }}</a> | {{ PEOPLE.pub_date }}</p>
+<p class="subhead">{{VIDEO.headline }}</p>
+<p class="byline">By <a href="{{ VIDEO.author_url}} ">{{ VIDEO.byline }}</a> and <a href="{{ VIDEO.author_2_url}} ">{{ VIDEO.byline_2 }}</a> | {{ VIDEO.pub_date }}</p>
 {%endblock%}
 
 
 {% block content %}
 <div class="story-content">
   <div class="sharelines">
-    <h3>Sharelines</h3>
     <ul>
       <li>
         <a href="https://twitter.com/intent/tweet?via=texastribune" title="share on Twitter" class="social-share" target="_blank">
@@ -34,19 +33,25 @@
         <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=&redirect_uri=" title="share on Facebook" class="social-share" target="_blank">
         <i class="fa fa-facebook"></i>
         </a>
-        <p>{{ PEOPLE.shareline_1 }}</p>
+        <p>{{ VIDEO.shareline_1 }}</p>
       </li>
     </ul>
   </div>
   <section class="prose">
-      {{ PEOPLE.text }}
+      {{ VIDEO.text }}
+      <h3>{{VIDEO.video_1_head}}</h3>
+      {{VIDEO.video_1_text}}
+      {{VIDEO.video_1_code}}
+      <h3>{{VIDEO.video_2_head}}</h3>
+      {{VIDEO.video_2_text}}
+      {{VIDEO.video_2_code}}
   </section>
   <section class="sub-navigation prose">
     <h3>More in this feature</h3>
     <ul>
-      <li><a href="{{META.section_1_slug }}">An overview of the project</a></li>
-      <li><a href="{{META.section_2_slug }}">An in-depth look at how the refinery industry has changed</a></li>
-      <li><a href="{{META.section_4_slug }}">A detailed list of refinery accidents</a></li>
+      <li><a href="{{META.section_1_slug }}">{{META.section_1_title }}</a> {{OVERVIEW.headline}}</li>
+      <li><a href="{{META.section_2_slug }}">{{META.section_2_title }}</a> {{REFORM.headline}}</li>
+      <li><a href="{{META.section_4_slug }}">{{META.section_4_title }}</a> {{DATA.headline}}</li>
     </ul>
   </section>
 </div>

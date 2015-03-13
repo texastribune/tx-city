@@ -25,6 +25,7 @@
   ul {
     list-style-type: none;
     padding-left: 0;
+    border-top:1px solid $border-gray;
 
     li {
       border-bottom: 1px solid $border-gray;
@@ -90,10 +91,6 @@
   }
 
   @include media($story-large) {
-    @include span-columns(10);
-    @include shift(1);
-    @include pad(0);
-
     p {
       font-size: .8em;
     }

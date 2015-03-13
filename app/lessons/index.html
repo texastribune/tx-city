@@ -5,7 +5,7 @@
 {% endblock %}
 
 {%block nav %}
-<nav id="top-nav">
+<nav id="menu">
   <ul>
     <a href="../{{META.section_1_slug }}"><li>{{ META.section_1_title }}</li></a>
     <a href="../{{META.section_2_slug }}"><li class="selected">{{ META.section_2_title }}</li></a>
@@ -25,7 +25,6 @@
 {% block content %}
 <div class="story-content">
   <div class="sharelines">
-    <h3>Sharelines</h3>
     <ul>
       <li>
         <a href="https://twitter.com/intent/tweet?via=texastribune" title="share on Twitter" class="social-share" target="_blank">
@@ -44,9 +43,9 @@
   <section class="sub-navigation prose">
     <h3>More in this feature</h3>
     <ul>
-      <li><a href="{{META.section_1_slug }}">An overview of the project</a></li>
-      <li><a href="{{META.section_3_slug }}">Video interviews with the people who survived the blast</a></li>
-      <li><a href="{{META.section_4_slug }}">A detailed list of refinery accidents</a></li>
+      <li><a href="{{META.section_1_slug }}">{{META.section_1_title }}</a> {{OVERVIEW.headline}}</li>
+      <li><a href="{{META.section_3_slug }}">{{META.section_3_title }}</a> {{VIDEO.headline}}</li>
+      <li><a href="{{META.section_4_slug }}">{{META.section_4_title }}</a> {{DATA.headline}}</li>
     </ul>
   </section>
 </div>
