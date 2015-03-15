@@ -1,0 +1,24 @@
+.findings{
+  border-top:1px solid $tribune-yellow;
+  border-bottom: 1px solid $tribune-yellow;
+  position:relative;
+  margin: 1em 0;
+  ul{
+    margin:1em;
+    line-height:1.4em;
+    font-weight:400;
+    font-size:0.9em;
+    li {
+      margin-bottom:1em;
+    }
+  }
+  @include media($default-768){
+    margin:0.5em 0;
+    float:right;
+    width:47%;
+    margin-left:3%
+  }
+}
+#timeline{
+  margin: 1em 0;
+}
