@@ -17,12 +17,13 @@
 
 
 {%block headline %}
-<p class="subhead">{{DATA.headline }}</p>
+<p class="subhead">{{ META.section_4_title }}</p>
 <p class="byline">By <a href="{{ DATA.author_url}} ">{{ DATA.byline }}</a> and <a href="{{ DATA.author_2_url}} ">{{ DATA.byline_2 }}</a> | {{ DATA.pub_date }}</p>
 {%endblock%}
 
 {% block content %}
 <div class="story-content">
+  <h2>{{DATA.headline}}</h2>
   <div class="sharelines">
     <ul>
       <li>
