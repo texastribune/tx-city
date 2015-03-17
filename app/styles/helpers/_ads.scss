@@ -22,8 +22,12 @@
 
 .box-ad {
   margin-bottom: 1em;
+  text-align:center;
+  @include media($default-768){
+    float:right;
+    margin-left:1em;
+  }
 }
-
 .rotating-ad {
   margin: 1em auto;
   text-align: center;

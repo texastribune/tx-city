@@ -1,4 +1,4 @@
-$med-header: new-breakpoint(min-width 451px max-width 560px);
+$med-header: new-breakpoint(max-width 560px);
 $small-header: new-breakpoint(max-width 450px);
 
 .masthead {

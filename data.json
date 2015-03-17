@@ -8,8 +8,7 @@
     "section_3_title": "Survivors Remember",
     "section_3_slug": "video",
     "section_4_title": "A Deadly Industry",
-    "section_4_slug": "data",
-    "disclosure": "<p><em>Disclosure: BP, Valero and Texas A&amp;M University are corporate sponsors of The Texas Tribune. Tony Buzbee was a major donor to The Texas Tribune in 2012. A complete list of Tribune donors and sponsors can be viewed <a href=\"http://www.texastribune.org/support-us/donors-and-members/\">here</a>.</em></p>\n"
+    "section_4_slug": "data"
   },
   "OVERVIEW": {
     "headline": "Blood Lessons",
@@ -29,7 +28,8 @@
     "video_title": "Video Title",
     "video_code": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/prC__PJTk3M\" frameborder=\"0\" allowfullscreen></iframe>",
     "video_caption": "<p>This is the caption for the video. <a href=\"/people\">It links to all videos</a>.</p>\n",
-    "findings": "<ul>\n<li>At least 60 workers have died at U.S. refineries since March 23, 2005, nearly the same number as the decade before.</li>\n<li>Federal officials have tracked nearly 350 fires at U.S. refineries in the past eight years — about one every week.</li>\n<li>Some companies continue to put tents and office trailers in danger zones at refineries, despite recommendations to limit the number of workers in harm’s way.</li>\n<li>The death toll in the worst refinery accident since 2005 was higher because nonessential personnel were left in harm’s way. Seven were killed at a Seattle refinery during a maintenance activity that required one operator.</li>\n<li>Federal regulators lack hard data to accurately track deaths and monitor safety trends within the industry.</li>\n</ul>\n"
+    "findings": "<ul>\n<li>At least 60 workers have died at U.S. refineries since March 23, 2005, nearly the same number as the decade before.</li>\n<li>Federal officials have tracked nearly 350 fires at U.S. refineries in the past eight years — about one every week.</li>\n<li>Some companies continue to put tents and office trailers in danger zones at refineries, despite recommendations to limit the number of workers in harm’s way.</li>\n<li>The death toll in the worst refinery accident since 2005 was higher because nonessential personnel were left in harm’s way. Seven were killed at a Seattle refinery during a maintenance activity that required one operator.</li>\n<li>Federal regulators lack hard data to accurately track deaths and monitor safety trends within the industry.</li>\n</ul>\n",
+    "disclosure": "<p><em>Disclosure: BP is a corporate sponsor of The Texas Tribune. A complete list of Tribune donors and sponsors can be viewed <a href=\"http://www.texastribune.org/support-us/donors-and-members/\">here</a>.</em></p>\n"
   },
   "MAIN": {
     "headline": "Anatomy of Disaster",
@@ -62,7 +62,8 @@
     "photo_caption_3": "",
     "photo_credit_3": "",
     "block_quote": "",
-    "block_quote_source": ""
+    "block_quote_source": "",
+    "disclosure": "<p><em>Disclosure: BP, Valero and Texas A&amp;M University are corporate sponsors of The Texas Tribune. Tony Buzbee was a major donor to The Texas Tribune in 2012. A complete list of Tribune donors and sponsors can be viewed <a href=\"http://www.texastribune.org/support-us/donors-and-members/\">here</a>.</em></p>\n"
   },
   "VIDEO": {
     "headline": "Survivors Remember",
@@ -82,7 +83,8 @@
     "video_2_head": "BP Explosion Survivor",
     "video_2_text": "<p><strong>Dave Leining</strong> still thinks about the Texas City refinery blast when he gets out of bed each morning: He feels twinges in the ankles he broke, his legs remain stiff and his hearing will never be the same.</p>\n<p>But the retired longtime BP refinery employee remains grateful to be alive — only by chance, he’d been standing in a slightly protected spot inside a temporary double-wide office trailer when it was blown apart and blasted by a fireball.</p>\n<p>When disaster struck, Leining was standing in a doorway in Morris King’s office. King died only a few feet away. Another colleague, Larry Thomas, who’d been leaning against the trailer wall, was killed, too. Linda Rowe had come into the office that day only to return a pair of forgotten glasses to her husband, James. Both Rowes died.</p>\n<p>In fact, all 15 workers killed were inside or near that trailer: King, the Rowes, Thomas, Kimberly Smith, Larry Linsenbardt, Daniel Hogan, Eugene White, Rafael Herrera, Glenn Bolton, Jimmy Hunnings, Susan Taylor, Lorena Cruz-Alexander, Arthur Ramos and Ryan Rodriguez.</p>\n<p>Leining struggled through months of rehab to escape from a wheelchair. He returned to the BP-Texas City refinery the next year, but later quit in disgust after an incident in which he said co-workers opposed his suggestion to use fire-retardant suits for repair job.</p>\n<p>“I realized then it was time for me to move on,” he said. He worked at the Texas City refinery for 36 years - first for Amoco and then for BP.</p>\n",
     "video_2_code": "<iframe width=\"100%\" height=\"420\" src=\"https://www.youtube.com/embed/p3mZHrDB4VE\" frameborder=\"0\" allowfullscreen></iframe>",
-    "video_2_credit": "Mayra Beltran, Houston Chronicle"
+    "video_2_credit": "Mayra Beltran, Houston Chronicle",
+    "disclosure": "<p><em>Disclosure: BP is a corporate sponsor of The Texas Tribune. A complete list of Tribune donors and sponsors can be viewed <a href=\"http://www.texastribune.org/support-us/donors-and-members/\">here</a>.</em></p>\n"
   },
   "DATA": {
     "headline": "A Deadly Industry",
@@ -99,7 +101,8 @@
     "pub_date": "March 22, 2015",
     "shareline_1": "At least 60 workers have died at U.S. refineries since the Texas City blast. See names, what happened.",
     "shareline_2": "10 years after the Texas City refinery blast, the industry looks deadly as ever. See 20 years of fatality data.",
-    "text": "<p>How many people die at oil refineries each year? </p>\n<p>Longstanding federal record-keeping practices make it incredibly tough to answer that simple question. </p>\n<p>The public can easily search data at the Occupational Safety and Health Administration (OSHA), which records deaths and injuries reported across all industries. But typing the code for “Petroleum Refining and Related Industries” — 2911 — into the agency’s query tool only reveals a small fraction of all who died at refineries. </p>\n<p>Oil refiners have increasingly contracted out some of their most dangerous jobs to companies that are classified elsewhere in the federal system.</p>\n<p>The many categories include “3443, Fabricated Plate Work,” “1799, Special Trade Contractors, Not Elsewhere Classified” and “1629, Heavy Construction, Not Elsewhere Classified.”</p>\n<p>In the 2005 Texas City blast, for instance, all of the 15 workers killed were contractors. None of their deaths show up in the federal government’s annual tally for the refining industry.</p>\n<p>The U.S. Bureau of Labor Statistics began tracking contractors’ deaths at refineries for the first time in 2011, but still misses incidents, records show.</p>\n<p>The following is a list of all refinery deaths that The Texas Tribune and the <em>Houston Chronicle</em> could confirm after an exhaustive search that included OSHA records, government investigation reports, newspaper archives and legal filings. </p>\n<p>At least 63 people died at refineries in the 10 years before the BP explosion. At least 60 people have died since March 23, 2005.</p>\n"
+    "text": "<p>How many people die at oil refineries each year? </p>\n<p>Longstanding federal record-keeping practices make it incredibly tough to answer that simple question. </p>\n<p>The public can easily search data at the Occupational Safety and Health Administration (OSHA), which records deaths and injuries reported across all industries. But typing the code for “Petroleum Refining and Related Industries” — 2911 — into the agency’s query tool only reveals a small fraction of all who died at refineries. </p>\n<p>Oil refiners have increasingly contracted out some of their most dangerous jobs to companies that are classified elsewhere in the federal system.</p>\n<p>The many categories include “3443, Fabricated Plate Work,” “1799, Special Trade Contractors, Not Elsewhere Classified” and “1629, Heavy Construction, Not Elsewhere Classified.”</p>\n<p>In the 2005 Texas City blast, for instance, all of the 15 workers killed were contractors. None of their deaths show up in the federal government’s annual tally for the refining industry.</p>\n<p>The U.S. Bureau of Labor Statistics began tracking contractors’ deaths at refineries for the first time in 2011, but still misses incidents, records show.</p>\n<p>The following is a list of all refinery deaths that The Texas Tribune and the <em>Houston Chronicle</em> could confirm after an exhaustive search that included OSHA records, government investigation reports, newspaper archives and legal filings. </p>\n<p>At least 63 people died at refineries in the 10 years before the BP explosion. At least 60 people have died since March 23, 2005.</p>\n",
+    "disclosure": "<p><em>Disclosure: BP and Valero are corporate sponsors of The Texas Tribune. A complete list of Tribune donors and sponsors can be viewed <a href=\"http://www.texastribune.org/support-us/donors-and-members/\">here</a>.</em></p>\n"
   },
   "SLIDESHOW": [
     {

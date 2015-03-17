@@ -86,13 +86,6 @@ hr{
     font-size:1.2em;
   }
 }
-.box-ad {
-  text-align:center;
-  @include media($default-768){
-    float:right;
-    margin-left:1em;
-  }
-}
 .sub-navigation {
   border-top: 1px solid $tribune-yellow;
   ul {

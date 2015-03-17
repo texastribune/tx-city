@@ -35,12 +35,15 @@ $banner-bp: new-breakpoint(min-width 815px);
       height:400px;
     }
     @include media($default-560) {
-      background-image:url("../assets/images/TXCity-Cover.jpg");
+      background-image:url("../assets/images/TxCity-Cover.jpg");
+      &.disaster{
+        background-image:url("../assets/images/TxCity-Cover-Disaster.jpg")
+      }
       &.video{
-        background-image:url("../assets/images/TXCity-Cover-Survivors.jpg");
+        background-image:url("../assets/images/TxCity-Cover-Survivors.jpg");
       }
       &.data{
-        background-image:url("../assets/images/TXCity-Cover-DeadlyIndustry.jpg");
+        background-image:url("../assets/images/TxCity-Cover-DeadlyIndustry.jpg");
       }
     }
   }
