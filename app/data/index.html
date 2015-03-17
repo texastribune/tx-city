@@ -17,13 +17,14 @@
 
 
 {%block headline %}
-<p class="subhead">{{ META.section_4_title }}</p>
-<p class="byline">By <a href="{{ DATA.author_url}} ">{{ DATA.byline }}</a> and <a href="{{ DATA.author_2_url}} ">{{ DATA.byline_2 }}</a> | {{ DATA.pub_date }}</p>
+<h1><a href="">{{ META.section_4_title}}</a></h1>
+<p class="subhead">{{ DATA.headline }}</p>
+<p class="byline">By <a href="{{ DATA.author_url}} ">{{ DATA.byline }}</a>, <a href="{{ DATA.author_2_url}} ">{{ DATA.byline_2 }}</a> and <a href="{{ DATA.author_3_url}} ">{{ DATA.byline_3 }}</a> | {{ DATA.pub_date }}</p>
 {%endblock%}
 
 {% block content %}
 <div class="story-content">
-  <h2>{{DATA.headline}}</h2>
+  <!-- <h2>{{DATA.headline}}</h2> -->
   <div class="sharelines">
     <ul>
       <li>
@@ -109,12 +110,17 @@
         </div>
     {% endfor %}
   </section>
+  <section class="prose">
+    <p class="disclosure">
+      {{META.disclosure}}
+    </p>
+  </section>
   <section class="sub-navigation prose">
     <h3>More in this feature</h3>
     <ul>
-      <li><a href="{{META.section_1_slug }}">{{META.section_1_title}}</a> {{OVERVIEW.headline}}</li>
-      <li><a href="{{META.section_2_slug }}">{{META.section_2_title}}</a> {{REFORM.headline}}</li>
-      <li><a href="{{META.section_3_slug }}">{{META.section_3_title}}</a> {{VIDEO.headline}}</li>
+      <li><a href="../{{META.section_1_slug }}">{{META.section_1_title}}</a> {{OVERVIEW.headline}}</li>
+      <li><a href="../{{META.section_2_slug }}">{{META.section_2_title}}</a> {{REFORM.headline}}</li>
+      <li><a href="../{{META.section_3_slug }}">{{META.section_3_title}}</a> {{VIDEO.headline}}</li>
     </ul>
   </section>
 </div>

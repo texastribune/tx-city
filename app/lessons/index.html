@@ -17,6 +17,7 @@
 
 
 {% block headline %}
+<h1><a href="">{{ META.section_2_title}}</a></h1>
 <p class="subhead">{{REFORM.headline }}</p>
 <p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a>, <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a> and <a href="{{ REFORM.author_3_url}} ">{{ REFORM.byline_3 }}</a> | {{ REFORM.pub_date }}</p>
 {% endblock %}
@@ -56,14 +57,42 @@
     </ul>
   </div>
   <section class="prose">
-      {{ REFORM.text }}
+    {{ REFORM.text_1 }}
+    <div class="photo">
+      <img src="../assets/images/{{REFORM.photo_1}}" />
+      <p class="credit">{{ REFORM.photo_credit_1 }}</p>
+      <p class="caption">{{REFORM.photo_caption_1 }}</p>
+    </div>
+    {{ REFORM.text_2 }}
+    <div class="photo">
+        {{ REFORM.video_code }}
+        <p>{{ REFORM.video_caption }}</p>
+    </div>
+    {{REFORM.text_3}}
+    <div class="ad-container box-ad" id="div-gpt-ad-1406570316312-1">
+      <script>
+        googletag.cmd.push(function() {
+          googletag.display('div-gpt-ad-1406570316312-1');
+        });
+      </script>
+    </div>
+    {{REFORM.text_4}}
+    <div class="photo">
+      <img src="../assets/images/{{REFORM.photo_2}}" />
+      <p class="credit">{{ REFORM.photo_credit_2 }}</p>
+      <p class="caption">{{ REFORM.photo_caption_2 }}</p>
+    </div>
+    {{REFORM.text_5}}
+    <p class="disclosure">
+      {{META.disclosure}}
+    </p>
   </section>
   <section class="sub-navigation prose">
     <h3>More in this feature</h3>
     <ul>
-      <li><a href="{{META.section_1_slug }}">{{META.section_1_title }}</a> {{OVERVIEW.headline}}</li>
-      <li><a href="{{META.section_3_slug }}">{{META.section_3_title }}</a> {{VIDEO.headline}}</li>
-      <li><a href="{{META.section_4_slug }}">{{META.section_4_title }}</a> {{DATA.headline}}</li>
+      <li><a href="../{{META.section_1_slug }}">{{META.section_1_title }}</a> {{OVERVIEW.headline}}</li>
+      <li><a href="../{{META.section_3_slug }}">{{META.section_3_title }}</a> {{VIDEO.headline}}</li>
+      <li><a href="../{{META.section_4_slug }}">{{META.section_4_title }}</a> {{DATA.headline}}</li>
     </ul>
   </section>
 </div>

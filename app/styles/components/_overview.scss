@@ -1,4 +1,4 @@
-.findings{
+.inline-feature{
   border-top:1px solid $tribune-yellow;
   border-bottom: 1px solid $tribune-yellow;
   position:relative;
@@ -16,7 +16,8 @@
     margin:0.5em 0;
     float:right;
     width:47%;
-    margin-left:3%
+    margin-left:3%;
+    border-bottom:0px;
   }
 }
 #timeline{

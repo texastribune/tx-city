@@ -17,6 +17,7 @@
 
 
 {%block headline %}
+<h1><a href="">{{ META.section_3_title}}</a></h1>
 <p class="subhead">{{VIDEO.headline }}</p>
 <p class="byline">By <a href="{{ VIDEO.author_url}} ">{{ VIDEO.byline }}</a> and <a href="{{ VIDEO.author_2_url}} ">{{ VIDEO.byline_2 }}</a> | {{ VIDEO.pub_date }}</p>
 {%endblock%}
@@ -48,19 +49,21 @@
   </div>
   <section class="prose">
       {{ VIDEO.text }}
-      <h3>{{VIDEO.video_1_head}}</h3>
       {{VIDEO.video_1_text}}
       {{VIDEO.video_1_code}}
-      <h3>{{VIDEO.video_2_head}}</h3>
+      <hr class="yellow" />
       {{VIDEO.video_2_text}}
       {{VIDEO.video_2_code}}
+      <p class="disclosure">
+        {{META.disclosure}}
+      </p>
   </section>
   <section class="sub-navigation prose">
     <h3>More in this feature</h3>
     <ul>
-      <li><a href="{{META.section_1_slug }}">{{META.section_1_title }}</a> {{OVERVIEW.headline}}</li>
-      <li><a href="{{META.section_2_slug }}">{{META.section_2_title }}</a> {{REFORM.headline}}</li>
-      <li><a href="{{META.section_4_slug }}">{{META.section_4_title }}</a> {{DATA.headline}}</li>
+      <li><a href="../{{META.section_1_slug }}">{{META.section_1_title }}</a> {{OVERVIEW.headline}}</li>
+      <li><a href="../{{META.section_2_slug }}">{{META.section_2_title }}</a> {{REFORM.headline}}</li>
+      <li><a href="../{{META.section_4_slug }}">{{META.section_4_title }}</a> {{DATA.headline}}</li>
     </ul>
   </section>
 </div>

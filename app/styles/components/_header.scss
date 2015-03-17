@@ -52,4 +52,31 @@ $small-header: new-breakpoint(max-width 450px);
       }
     }
   }
+  &.alternate{
+    .container{
+      max-width:none;
+      .branding{
+        @include media($default-768){
+          padding:0.5em;
+          float:left;
+          width:auto;
+        }
+      }
+      .project-title{
+        display: none;
+        @include media($default-768){
+          display: block;
+          float:right;
+          font-family:league-gothic;
+          text-transform:uppercase;
+          font-size:2em;
+          letter-spacing:0.03em;
+          padding:0.25em 0.5em;
+        }
+        a{
+          color:$light-teal;
+        }
+      }
+    }
+  }
 }
