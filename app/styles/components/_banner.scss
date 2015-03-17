@@ -37,7 +37,7 @@ $banner-bp: new-breakpoint(min-width 815px);
     @include media($default-560) {
       background-image:url("../assets/images/TxCity-Cover.jpg");
       &.disaster{
-        background-image:url("../assets/images/TxCity-Cover-Disaster.jpg")
+        background-image:url("../assets/images/TxCity-Cover-Anatomy.jpg")
       }
       &.video{
         background-image:url("../assets/images/TxCity-Cover-Survivors.jpg");
