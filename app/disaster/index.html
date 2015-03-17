@@ -8,18 +8,21 @@
 <nav id="menu">
   <ul>
     <a href="../{{OVERVIEW.slug }}"><li>{{ OVERVIEW.headline }}</li></a>
-    <a href="../{{REFORM.slug }}"><li class="selected">{{ REFORM.headline }}</li></a>
+    <a href="../{{MAIN.slug }}"><li class="selected">{{ MAIN.headline }}</li></a>
     <a href="../{{VIDEO.slug }}"><li>{{ VIDEO.headline }}</li></a>
     <a href="../{{DATA.slug }}"><li>{{ DATA.headline }}</li></a>
   </ul>
 </nav>
 {% endblock %}
 
+{% block bannerimg %}
+<div class="banner-image {{MAIN.slug}}"></div>
+{% endblock %}
 
 {% block headline %}
-<h1>{{ REFORM.headline}}</h1>
-<p class="subhead">{{REFORM.subhead }}</p>
-<p class="byline">By <a href="{{ REFORM.author_1_url}} ">{{ REFORM.byline_1 }}</a>, <a href="{{ REFORM.author_2_url}} ">{{ REFORM.byline_2 }}</a> and <a href="{{ REFORM.author_3_url}} ">{{ REFORM.byline_3 }}</a> | {{ REFORM.pub_date }}</p>
+<h1>{{ MAIN.headline}}</h1>
+<p class="subhead">{{MAIN.subhead }}</p>
+<p class="byline">By <a href="{{ MAIN.author_1_url}} ">{{ MAIN.byline_1 }}</a>, <a href="{{ MAIN.author_2_url}} ">{{ MAIN.byline_2 }}</a> and <a href="{{ MAIN.author_3_url}} ">{{ MAIN.byline_3 }}</a> | {{ MAIN.pub_date }}</p>
 {% endblock %}
 
 
@@ -28,38 +31,38 @@
   <div class="sharelines">
     <ul>
       <li>
-        <a href="https://twitter.com/intent/tweet?text={{ REFORM.shareline_1 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}%20&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+        <a href="https://twitter.com/intent/tweet?text={{ MAIN.shareline_1 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}%20&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
         <i class="fa fa-twitter"></i>
         </a>
         <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}" title="share on Facebook" class="social-share" target="_blank">
         <i class="fa fa-facebook"></i>
         </a>
-        <p>{{ REFORM.shareline_1 }}</p>
+        <p>{{ MAIN.shareline_1 }}</p>
       </li>
       <li>
-        <a href="https://twitter.com/intent/tweet?text={{ REFORM.shareline_2 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}%20&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+        <a href="https://twitter.com/intent/tweet?text={{ MAIN.shareline_2 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}%20&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
         <i class="fa fa-twitter"></i>
         </a>
         <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ META.section_2_slug }}" title="share on Facebook" class="social-share" target="_blank">
         <i class="fa fa-facebook"></i>
         </a>
-        <p>{{ REFORM.shareline_2 }}</p>
+        <p>{{ MAIN.shareline_2 }}</p>
       </li>
     </ul>
   </div>
   <section class="prose">
-    {{ REFORM.text_1 }}
+    {{ MAIN.text_1 }}
     <div class="photo">
-      <img src="../assets/images/{{REFORM.photo_1}}" />
-      <p class="credit">{{ REFORM.photo_credit_1 }}</p>
-      <p class="caption">{{REFORM.photo_caption_1 }}</p>
+      <img src="../assets/images/{{MAIN.photo_1}}" />
+      <p class="credit">{{ MAIN.photo_credit_1 }}</p>
+      <p class="caption">{{MAIN.photo_caption_1 }}</p>
     </div>
-    {{ REFORM.text_2 }}
+    {{ MAIN.text_2 }}
     <div class="photo">
-        {{ REFORM.video_code }}
-        <p>{{ REFORM.video_caption }}</p>
+        {{ MAIN.video_code }}
+        <p>{{ MAIN.video_caption }}</p>
     </div>
-    {{REFORM.text_3}}
+    {{MAIN.text_3}}
     <div class="ad-container box-ad" id="div-gpt-ad-1406570316312-1">
       <script>
         googletag.cmd.push(function() {
@@ -67,13 +70,13 @@
         });
       </script>
     </div>
-    {{REFORM.text_4}}
+    {{MAIN.text_4}}
     <div class="photo">
-      <img src="../assets/images/{{REFORM.photo_2}}" />
-      <p class="credit">{{ REFORM.photo_credit_2 }}</p>
-      <p class="caption">{{ REFORM.photo_caption_2 }}</p>
+      <img src="../assets/images/{{MAIN.photo_2}}" />
+      <p class="credit">{{ MAIN.photo_credit_2 }}</p>
+      <p class="caption">{{ MAIN.photo_caption_2 }}</p>
     </div>
-    {{REFORM.text_5}}
+    {{MAIN.text_5}}
     <p class="disclosure">
       {{META.disclosure}}
     </p>

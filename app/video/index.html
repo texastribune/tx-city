@@ -8,13 +8,16 @@
 <nav id="menu">
   <ul>
     <a href="../{{OVERVIEW.slug }}"><li>{{ OVERVIEW.headline }}</li></a>
-    <a href="../{{REFORM.slug }}"><li>{{ REFORM.headline }}</li></a>
+    <a href="../{{MAIN.slug }}"><li>{{ MAIN.headline }}</li></a>
     <a href="../{{VIDEO.slug }}"><li class="selected">{{ VIDEO.headline }}</li></a>
     <a href="../{{DATA.slug }}"><li>{{ DATA.headline }}</li></a>
   </ul>
 </nav>
 {% endblock %}
 
+{% block bannerimg %}
+<div class="banner-image {{VIDEO.slug}}"></div>
+{% endblock %}
 
 {%block headline %}
 <h1>{{ VIDEO.headline}}</h1>
@@ -68,7 +71,7 @@
     <h3>More in this feature</h3>
     <ul>
       <li><a href="../{{OVERVIEW.slug }}">{{OVERVIEW.headline}}</a> {{OVERVIEW.subhead}}</li>
-      <li><a href="../{{REFORM.slug }}">{{REFORM.headline}}</a> {{REFORM.subhead}}</li>
+      <li><a href="../{{MAIN.slug }}">{{MAIN.headline}}</a> {{MAIN.subhead}}</li>
       <li><a href="../{{DATA.slug }}">{{DATA.headline }}</a> {{DATA.subhead}}</li>
     </ul>
   </section>

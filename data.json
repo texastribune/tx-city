@@ -3,8 +3,8 @@
     "project_title": "Blood Lessons",
     "section_1_title": "Day of Fire",
     "section_1_slug": "",
-    "section_2_title": "Lessons Discarded",
-    "section_2_slug": "lessons",
+    "section_2_title": "Anatomy of Disaster",
+    "section_2_slug": "disastor",
     "section_3_title": "Survivors Remember",
     "section_3_slug": "video",
     "section_4_title": "A Deadly Industry",
@@ -31,10 +31,10 @@
     "video_caption": "<p>This is the caption for the video. <a href=\"/people\">It links to all videos</a>.</p>\n",
     "findings": "<ul>\n<li>At least 60 workers have died at U.S. refineries since March 23, 2005, nearly the same number as the decade before.</li>\n<li>Federal officials have tracked nearly 350 fires at U.S. refineries in the past eight years — about one every week.</li>\n<li>Some companies continue to put tents and office trailers in danger zones at refineries, despite recommendations to limit the number of workers in harm’s way.</li>\n<li>The death toll in the worst refinery accident since 2005 was higher because nonessential personnel were left in harm’s way. Seven were killed at a Seattle refinery during a maintenance activity that required one operator.</li>\n<li>Federal regulators lack hard data to accurately track deaths and monitor safety trends within the industry.</li>\n</ul>\n"
   },
-  "REFORM": {
-    "headline": "Lessons Discarded",
+  "MAIN": {
+    "headline": "Anatomy of Disaster",
     "subhead": "Studies pinpointed what went wrong in Texas City, but unsafe conditions persist",
-    "slug": "lessons",
+    "slug": "disaster",
     "byline_1": "Jim Malewitz",
     "author_1_url": "http://www.texastribune.org/about/staff/jim-malewitz",
     "byline_2": "Mark Collette",
