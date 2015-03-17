@@ -7,13 +7,16 @@
     font-size: .85em;
     font-weight: 300;
     letter-spacing: .02em;
-    line-height: 1;
-    margin:0.5em 0;
+    line-height: 1.2;
+    @include media($small-header){
+      padding-left:0.5em;
+      @include span-columns(10);
+      @include omega();
+    }
     @include media($default-560){
-      margin: 1em 0;
+      margin:1em 0;
     }
   }
-
   ul {
     list-style-type: none;
     padding-left: 0;
@@ -22,18 +25,24 @@
     li {
       border-bottom: 1px solid $border-gray;
       margin: auto;
+      @include media($small-header){
+        padding:0.5em 0;
+        @include clearfix;
+      }
     }
   }
 
   a {
     text-decoration: none;
-
     &:active {
       color: $share-button-black;
     }
 
     &:hover {
       color: $share-button-black;
+    }
+    @include media($small-header){
+      @include span-columns(1);
     }
   }
 
@@ -62,7 +71,7 @@
     &:before {
       border-right: 1px solid #ccc;
       content: '\f099';
-      padding-right: .5em;
+      padding-right: .3em;
     }
   }
 

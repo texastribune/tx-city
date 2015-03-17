@@ -1,10 +1,7 @@
 $banner-bp: new-breakpoint(min-width 815px);
 
 .banner{
-  height:16em;
-  @include media($med-header){
-    height:13em;
-  }
+  height:13.5em;
   @include media($banner-bp) {
     height:400px;
   }
@@ -29,14 +26,11 @@ $banner-bp: new-breakpoint(min-width 815px);
     }
   }
   .banner-image {
-    height:16em;
+    height:13.5em;
     width:100%;
     background-repeat:no-repeat;
     background-position:center center;
     background-color:#333;
-    @include media($med-header){
-      height:13em;
-    }
     @include media($banner-bp) {
       height:400px;
     }
@@ -67,7 +61,7 @@ $banner-bp: new-breakpoint(min-width 815px);
       &.subhead {
         font-size:1.1em;
         text-shadow: black 2px 2px 0;
-        margin:0.5em;
+        margin:0.5em 0;
         @include media($default-560) {
           font-size:1.5em;
         }

@@ -7,17 +7,18 @@
 {%block nav %}
 <nav id="menu">
   <ul>
-    <a href="{{META.section_1_slug }}"><li class="selected">{{ META.section_1_title }}</li></a>
-    <a href="{{META.section_2_slug }}"><li>{{ META.section_2_title }}</li></a>
-    <a href="{{META.section_3_slug }}"><li>{{ META.section_3_title }}</li></a>
-    <a href="{{META.section_4_slug }}"><li>{{ META.section_4_title }}</li></a>
+    <a href="{{OVERVIEW.slug }}"><li class="selected">{{ OVERVIEW.headline }}</li></a>
+    <a href="{{REFORM.slug }}"><li>{{ REFORM.headline }}</li></a>
+    <a href="{{VIDEO.slug }}"><li>{{ VIDEO.headline }}</li></a>
+    <a href="{{DATA.slug }}"><li>{{ DATA.headline }}</li></a>
   </ul>
 </nav>
 {% endblock %}
 
 
 {%block headline %}
-<p class="subhead">{{OVERVIEW.headline }}</p>
+<h1>{{ OVERVIEW.headline}}</h1>
+<p class="subhead">{{OVERVIEW.subhead }}</p>
 <p class="byline">By <a href="{{ OVERVIEW.author_url}} ">{{ OVERVIEW.byline }}</a> | {{ OVERVIEW.pub_date }}</p>
 {%endblock%}
 
@@ -104,9 +105,9 @@
     <section class="sub-navigation prose no-line">
       <h3>More in this feature</h3>
       <ul>
-        <li><a href="{{META.section_2_slug }}">{{META.section_2_title}}</a> {{REFORM.headline}}</li>
-        <li><a href="{{META.section_3_slug }}">{{META.section_3_title}}</a> {{VIDEO.headline}}</li>
-        <li><a href="{{META.section_4_slug }}">{{META.section_4_title}}</a> {{DATA.headline}}</li>
+        <li><a href="{{REFORM.slug }}">{{REFORM.headline }}</a> {{REFORM.subhead}}</li>
+        <li><a href="{{VIDEO.slug }}">{{VIDEO.headline}}</a> {{VIDEO.subhead}}</li>
+        <li><a href="{{DATA.slug }}">{{DATA.headline}}</a> {{DATA.subhead}}</li>
       </ul>
     </section>
   </div>

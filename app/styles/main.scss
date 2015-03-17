@@ -81,11 +81,6 @@ hr{
     }
   }
 }
-.sharelines {
-  p {
-    line-height:1.2em;
-  }
-}
 .box-ad {
   text-align:center;
   @include media($default-768){
