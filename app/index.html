@@ -50,6 +50,7 @@
         </li>
       </ul>
     </div>
+    <div id="pym-graphic">&nbsp;</div>
     <section class="prose">
       {{ OVERVIEW.text_1 }}
       <div class="inline-feature">
@@ -120,4 +121,9 @@
 
 {% block script %}
 {{ super()}}
+<script src="//s3.amazonaws.com/graphics.texastribune.org/graphics/tx-city-data/scripts/pym/pym.min.js"></script>
+<script>
+    var url = '//s3.amazonaws.com/graphics.texastribune.org/graphics/tx-city-data/index.html';
+    var pymParent = new pym.Parent('pym-graphic', url, {});
+</script>
 {% endblock %}
