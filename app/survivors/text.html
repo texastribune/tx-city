@@ -1,0 +1,40 @@
+{% extends "templates/_base_sub.html" %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{%block nav %}
+<nav id="menu">
+  <ul>
+    <a href="../{{OVERVIEW.slug }}"><li>{{ OVERVIEW.headline }}</li></a>
+    <a href="../{{MAIN.slug }}"><li>{{ MAIN.headline }}</li></a>
+    <a href="../{{VIDEO.slug }}"><li class="selected">{{ VIDEO.headline }}</li></a>
+    <a href="../{{DATA.slug }}"><li>{{ DATA.headline }}</li></a>
+  </ul>
+</nav>
+{% endblock %}
+
+{% block bannerimg %}
+<div class="banner-image {{VIDEO.slug}}"></div>
+{% endblock %}
+
+{%block headline %}
+<h1>{{ VIDEO.headline}}</h1>
+<p class="subhead">{{VIDEO.subhead }}</p>
+<p class="byline">By <a href="{{ VIDEO.author_url}} ">{{ VIDEO.byline }}</a> and <a href="{{ VIDEO.author_2_url}} ">{{ VIDEO.byline_2 }}</a> | {{ VIDEO.pub_date }}</p>
+{%endblock%}
+
+{% block content %}
+<div class="story-content">
+  <section class="prose" style="margin-top:1em;">
+    {{ VIDEO.video_1_text }}
+    {{ VIDEO.video_2_text }}
+    {{ VIDEO.disclosure }}
+  </section>
+</div>
+{% endblock %}
+
+{% block script %}
+{{ super()}}
+{% endblock %}

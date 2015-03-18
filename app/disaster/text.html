@@ -1,0 +1,43 @@
+{% extends "templates/_base_sub.html" %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{%block nav %}
+<nav id="menu">
+  <ul>
+    <a href="../{{OVERVIEW.slug }}"><li>{{ OVERVIEW.headline }}</li></a>
+    <a href="../{{MAIN.slug }}"><li class="selected">{{ MAIN.headline }}</li></a>
+    <a href="../{{VIDEO.slug }}"><li>{{ VIDEO.headline }}</li></a>
+    <a href="../{{DATA.slug }}"><li>{{ DATA.headline }}</li></a>
+  </ul>
+</nav>
+{% endblock %}
+
+{% block bannerimg %}
+<div class="banner-image {{MAIN.slug}}"></div>
+{% endblock %}
+
+{%block headline %}
+<h1>{{ MAIN.headline}}</h1>
+<p class="subhead">{{MAIN.subhead }}</p>
+<p class="byline">By <a href="{{ MAIN.author_url}} ">{{ MAIN.byline }}</a>, <a href="{{ MAIN.author_2_url}} ">{{ MAIN.byline_2 }}</a> and <a href="{{ MAIN.author_3_url}} ">{{ MAIN.byline_3 }}</a>| {{ MAIN.pub_date }}</p>
+{%endblock%}
+
+{% block content %}
+<div class="story-content">
+  <section class="prose" style="margin-top:1em;">
+    {{ MAIN.text_1 }}
+    {{ MAIN.text_2 }}
+    {{ MAIN.text_3 }}
+    {{ MAIN.text_4 }}
+    {{ MAIN.text_5 }}
+    {{ MAIN.disclosure }}
+  </section>
+</div>
+{% endblock %}
+
+{% block script %}
+{{ super()}}
+{% endblock %}
