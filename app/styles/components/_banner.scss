@@ -35,15 +35,15 @@ $banner-bp: new-breakpoint(min-width 815px);
       height:400px;
     }
     @include media($default-560) {
-      background-image:url("../assets/images/TxCity-Cover.jpg");
+      background-image:url("../assets/images/TxCity-bg-overview.jpg");
       &.disaster{
-        background-image:url("../assets/images/TxCity-Cover-Anatomy.jpg")
+        background-image:url("../assets/images/TxCity-bg-disaster.jpg")
       }
-      &.video{
-        background-image:url("../assets/images/TxCity-Cover-Survivors.jpg");
+      &.survivors{
+        background-image:url("../assets/images/TxCity-bg-survivors.jpg");
       }
       &.data{
-        background-image:url("../assets/images/TxCity-Cover-DeadlyIndustry.jpg");
+        background-image:url("../assets/images/TxCity-bg-data.jpg");
       }
     }
   }
@@ -89,11 +89,9 @@ $banner-bp: new-breakpoint(min-width 815px);
         @include media($default-560) {
           font-size:1.1em;
           margin-bottom:1.5em;
+          text-shadow: black 1px 1px 0;
         }
       }
-    }
-    @include media($default-560){
-      background-color: rgba(17, 17, 17, 0.4);
     }
   }
 }

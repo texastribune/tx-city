@@ -1,0 +1,12 @@
+.prose {
+  .block-quote{
+    border-top: 2px solid $tribune-yellow;
+    border-bottom: 2px solid $tribune-yellow;
+    margin: 1em 0;
+    color:#444;
+    h2{
+      line-height:1.2em;
+      letter-spacing:0.02em;
+    }
+  }
+}
