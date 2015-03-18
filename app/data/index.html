@@ -27,7 +27,6 @@
 
 {% block content %}
 <div class="story-content">
-  <!-- <h2>{{DATA.headline}}</h2> -->
   <div class="sharelines">
     <ul>
       <li>
@@ -52,6 +51,7 @@
   </div>
   <section class="prose">
     {{ DATA.text }}
+    <p class="download"><a href="../assets/refinery-accidents.csv"><i class="fa fa-file-excel-o"></i>Download the data</a></p>
     <h2>Incidents</h2>
     {% for incident in DB %}
       <div class="incident">

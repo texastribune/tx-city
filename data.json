@@ -1031,7 +1031,7 @@
       "News_Link": "http://www.apnewsarchive.com/1999/3-Killed-in-Oil-Refinery-Blast/id-991a12e494b76d5e296680089c21674c"
     },
     {
-      "Date": ",",
+      "Date": "Nov. 25, 1998",
       "Company": "Equilon Enterprises",
       "City": "Anacortes",
       "State": "WA",
@@ -1179,17 +1179,6 @@
       "State": "CA",
       "Dead": 1,
       "Summary": "Workers were cleaning a tank when sulfur dioxide and hydrogen sulfide gases inside exploded.\n\n",
-      "News_Source": "LA Times",
-      "News_Link": "http://articles.latimes.com/1995-09-08/news/mn-43567_1_refinery-blast-missing"
-    },
-    {
-      "Date": "Sep. 8, 1995",
-      "Company": "Unocal",
-      "City": "Nipomo",
-      "State": "CA",
-      "Dead": 1,
-      "Summary": "Workers were cleaning a tank when sulfur dioxide and hydrogen sulfide gases inside apparently exploded.\n\n",
-      "OSHA_Link": "https://www.osha.gov/pls/imis/establishment.inspection_detail?id=120195862",
       "News_Source": "LA Times",
       "News_Link": "http://articles.latimes.com/1995-09-08/news/mn-43567_1_refinery-blast-missing"
     }
