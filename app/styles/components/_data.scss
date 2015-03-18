@@ -95,9 +95,48 @@
         }
       }
     }
+    &.all-deaths {
+      border-top:0px;
+      text-align: center;
+      margin-bottom:2em;
+      h3 {
+        padding-bottom:0.25em;
+        margin-bottom:1.5em;
+        border-bottom:1px solid $tribune-yellow;
+      }
+      .before {
+        .deaths {
+          margin-bottom:2em;
+        }
+      }
+      .deaths{
+        @include span-columns(12);
+        text-align:center;
+        .number{
+          display: block;
+          margin-right:0;
+          font-size:8em;
+        }
+        p{
+          display:block;
+        }
+      }
+      @include media($default-560){
+        .before{
+          @include span-columns(6);
+          .deaths {
+            margin-bottom:0em;
+          }
+        }
+        .after {
+          @include span-columns(6);
+          @include omega();
+        }
+      }
+    }
   }
   .download{
-    text-align:right;
+    text-align:center;
     font-size:0.875em;
     text-transform:uppercase;
     .fa {

@@ -50,7 +50,28 @@
     </ul>
   </div>
   <section class="prose">
-    {{ DATA.text }}
+    {{ DATA.text_1 }}
+    <div class="incident all-deaths">
+      <div class="bottom-details">
+        <div class="before">
+          <h3>Before Texas City</h3>
+          <div class="deaths">
+            <p>At least</p>
+            <div class="number">64</div>
+            <p>deaths</p>
+          </div>
+        </div>
+        <div class="after">
+          <h3> After Texas City</h3>
+          <div class="deaths">
+            <p>At least</p>
+            <div class="number">58</div>
+            <p>deaths</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ DATA.text_2 }}
     <p class="download"><a href="../assets/refinery-accidents.csv"><i class="fa fa-file-excel-o"></i>Download the data</a></p>
     <h2>Incidents</h2>
     {% for incident in DB %}
