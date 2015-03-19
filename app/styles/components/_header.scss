@@ -49,6 +49,7 @@ $small-header: new-breakpoint(max-width 450px);
       }
       @include media($small-header){
         display: block;
+        margin:0;
       }
     }
   }
