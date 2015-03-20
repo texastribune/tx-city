@@ -2,13 +2,14 @@
 
 {% block meta %}
 {{ super () }}
-<meta property="og:description" content="{{ DATA.shareline_1 }}">
-<meta property="og:title" content="Undrinkable: {{ DATA.subhead }}">
+<meta property="og:url" content="http://apps.texastribune.org/blood-lessons/{{ DATA.slug }}">
+<meta property="og:description" content="{{ DATA.subhead }}">
+<meta property="og:title" content="{{ META.project_title }}: {{ DATA.headline }}">
 <meta property="og:redirect_uri" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/{{ DATA.slug }}">
-<meta property="og:image" content="http://s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ DATA.slug }}-fb.jpg">
-<meta name="twitter:title" content="{{ DATA.subhead }} | Blood Lessons">
-<meta name="twitter:description" content="{{ DATA.shareline_1 }}">
-<meta name="twitter:image" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ DATA.slug }}-fb.jpg">
+<meta property="og:image" content="http://s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ DATA.slug }}-fb.png">
+<meta name="twitter:title" content="{{ DATA.headline }} | Blood Lessons">
+<meta name="twitter:description" content="{{ DATA.subhead }}">
+<meta name="twitter:image" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ DATA.slug }}-fb.png">
 {% endblock %}
 
 {% block styles %}
@@ -89,8 +90,8 @@
       <div class="incident">
         <div class="top-details">
           <p class="date">{{incident.Date}}</p>
-          <p class="location">{{incident.City}}, {{incident.State}}</p>
           <p class="company">{{incident.Company}}</p>
+          <p class="location">{{incident.City}}, {{incident.State}}</p>
         </div>
         <div class="bottom-details">
           <div class="deaths">

@@ -2,13 +2,14 @@
 
 {% block meta %}
 {{ super () }}
-<meta property="og:description" content="{{ VIDEO.shareline_1 }}">
-<meta property="og:title" content="Undrinkable: {{ VIDEO.subhead }}">
+<meta property="og:url" content="http://apps.texastribune.org/blood-lessons/{{ VIDEO.slug }}">
+<meta property="og:description" content="{{ VIDEO.subhead }}">
+<meta property="og:title" content="{{ META.project_title }}: {{ VIDEO.headline }}">
 <meta property="og:redirect_uri" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/{{ VIDEO.slug }}">
-<meta property="og:image" content="http://s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ VIDEO.slug }}-fb.jpg">
-<meta name="twitter:title" content="{{ VIDEO.subhead }} | Blood Lessons">
-<meta name="twitter:description" content="{{ VIDEO.shareline_1 }}">
-<meta name="twitter:image" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ VIDEO.slug }}-fb.jpg">
+<meta property="og:image" content="http://s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ VIDEO.slug }}-fb.png">
+<meta name="twitter:title" content="{{ VIDEO.headline }} | Blood Lessons">
+<meta name="twitter:description" content="{{ VIDEO.subhead }}">
+<meta name="twitter:image" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ VIDEO.slug }}-fb.png">
 {% endblock %}
 
 {% block styles %}
@@ -45,7 +46,7 @@
         <a href="https://twitter.com/intent/tweet?text={{ VIDEO.shareline_1 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
         <i class="fa fa-twitter"></i>
         </a>
-        <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fmoose.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}" title="share on Facebook" class="social-share" target="_blank">
+        <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}" title="share on Facebook" class="social-share" target="_blank">
         <i class="fa fa-facebook"></i>
         </a>
         <p>{{ VIDEO.shareline_1 }}</p>
@@ -54,7 +55,7 @@
         <a href="https://twitter.com/intent/tweet?text={{ VIDEO.shareline_2 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
         <i class="fa fa-twitter"></i>
         </a>
-        <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fmoose.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}" title="share on Facebook" class="social-share" target="_blank">
+        <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ VIDEO.slug }}" title="share on Facebook" class="social-share" target="_blank">
         <i class="fa fa-facebook"></i>
         </a>
         <p>{{ VIDEO.shareline_2 }}</p>

@@ -2,13 +2,14 @@
 
 {% block meta %}
 {{ super () }}
-<meta property="og:description" content="{{ OVERVIEW.shareline_1 }}">
-<meta property="og:title" content="Undrinkable: {{ OVERVIEW.subhead }}">
+<meta property="og:url" content="http://apps.texastribune.org/blood-lessons/">
+<meta property="og:title" content="{{ META.project_title }}">
+<meta property="og:description" content="{{ OVERVIEW.subhead }}">
 <meta property="og:redirect_uri" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/{{ OVERVIEW.slug }}">
-<meta property="og:image" content="http://s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ OVERVIEW.slug }}-fb.jpg">
-<meta name="twitter:title" content="{{ OVERVIEW.subhead }} | Blood Lessons">
-<meta name="twitter:description" content="{{ OVERVIEW.shareline_1 }}">
-<meta name="twitter:image" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ OVERVIEW.slug }}-fb.jpg">
+<meta property="og:image" content="http://s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ DATA.slug }}-fb.png">
+<meta name="twitter:title" content="Blood Lessons">
+<meta name="twitter:description" content="{{ OVERVIEW.subhead }}">
+<meta name="twitter:image" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ DATA.slug }}-fb.png">
 {% endblock %}
 
 

@@ -204,7 +204,7 @@
     {
       "Date": "Sept. 23, 2014",
       "Company": "Midland Refining",
-      "City": "Wichita ",
+      "City": "Wichita",
       "State": "KS",
       "Dead": 1,
       "Names": "Tony Losey, 22",
@@ -239,7 +239,7 @@
     {
       "Date": "March 13, 2013",
       "Company": "Motiva Enterprises",
-      "City": "Norco ",
+      "City": "Norco",
       "State": "LA",
       "Dead": 1,
       "Names": "Michael Louque, 56",
@@ -398,7 +398,7 @@
     {
       "Date": "March 2, 2010",
       "Company": "HollyFrontier",
-      "City": "Artesia ",
+      "City": "Artesia",
       "State": "NM",
       "Dead": 2,
       "Names": "Natividad Andajo | Victor Villa",
@@ -445,7 +445,7 @@
     {
       "Date": "April 29, 2009",
       "Company": "Shell Oil",
-      "City": "Martinez ",
+      "City": "Martinez",
       "State": "CA",
       "Dead": 1,
       "Names": "William Maddock, 54",
@@ -754,7 +754,7 @@
     {
       "Date": "Oct. 28, 2003",
       "Company": "Lion Oil Company",
-      "City": "El Dorado ",
+      "City": "El Dorado",
       "State": "AR",
       "Dead": 1,
       "Summary": "A Lion Oil employee was found dead at a bank of oil storage tanks. It was originally thought the 58-year-old was exposed to hydrogen sulfide, but the coroner determined the cause of death was a massive heart attack.",
@@ -849,7 +849,7 @@
     {
       "Date": "Jan. 31, 2002",
       "Company": "Orion Refining",
-      "City": "Norco ",
+      "City": "Norco",
       "State": "LA",
       "Dead": 1,
       "Names": "Alonzo Stevens, 36",
@@ -925,7 +925,7 @@
     {
       "Date": "June 13, 2001",
       "Company": "Colorado Refining Company",
-      "City": "Comerce City ",
+      "City": "Comerce City",
       "State": "CO",
       "Dead": 1,
       "Names": "Dominick Mustache, 48",
@@ -935,7 +935,7 @@
     {
       "Date": "Feb. 22, 2001",
       "Company": "ExxonMobil ",
-      "City": "Torrance ",
+      "City": "Torrance",
       "State": "CA",
       "Dead": 1,
       "Summary": "A contractor with International Catalyst was vacuuming hydrophoric catalyst material in an inert nitrogen atmosphere of an approximate 100 foot hydrocracker reactor unit. He fell about 20 feet after getting tangled in equipment and later died at a hospital.",
@@ -945,6 +945,7 @@
       "Date": "Jan. 19, 2001",
       "Company": "Citgo Petroleum",
       "City": "Corpus Christi",
+      "State": "TX",
       "Dead": 1,
       "Names": "John C. Wood, 23",
       "Summary": "Wood, of Marthasville, Mo., was welding in a confined space at a refinery and was asphyxiated by argon.",
@@ -953,7 +954,7 @@
     {
       "Date": "Nov. 29, 2000",
       "Company": "Valero Energy Corp.",
-      "City": "Co",
+      "City": "Corpus Christi",
       "State": "TX",
       "Dead": 1,
       "Names": "Luis Govea, 45",
@@ -1137,7 +1138,7 @@
     {
       "Date": "Jan. 19, 1996",
       "Company": "BP",
-      "City": "Belle Chasse ",
+      "City": "Belle Chasse",
       "State": "LA",
       "Dead": 1,
       "Summary": "A Scaltech, Inc contractor working on fuel recylcing was having trouble with rocks piling up in equipment and lines. Wearing an organic vapor chemical cartridge respirator, he entered the tank, which had contained sludge and hydrocarbons, to take the larger rocks out by hand. He was overcome after approximately 10 minutes and died of asphyxia.",
