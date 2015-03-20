@@ -1,6 +1,5 @@
 .sharelines {
   @extend %content-block;
-  @include span-columns(12);
   p {
     color: $text-gray;
     font-family: $base-sans-serif;
@@ -30,6 +29,7 @@
         @include clearfix;
       }
     }
+    @include clearfix;
   }
 
   a {
@@ -100,4 +100,5 @@
       font-size: 1em;
     }
   }
+  @include clearfix;
 }

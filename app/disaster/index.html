@@ -1,5 +1,16 @@
 {% extends "templates/_base_sub.html" %}
 
+{% block meta %}
+{{ super () }}
+<meta property="og:description" content="{{ MAIN.shareline_1 }}">
+<meta property="og:title" content="Undrinkable: {{ MAIN.subhead }}">
+<meta property="og:redirect_uri" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/{{ MAIN.slug }}">
+<meta property="og:image" content="http://s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ MAIN.slug }}-fb.jpg">
+<meta name="twitter:title" content="{{ MAIN.subhead }} | Blood Lessons">
+<meta name="twitter:description" content="{{ MAIN.shareline_1 }}">
+<meta name="twitter:image" content="//s3.amazonaws.com/apps.texastribune.org/blood-lessons/assets/images/social/{{ MAIN.slug }}-fb.jpg">
+{% endblock %}
+
 {% block styles %}
 {{ super() }}
 {% endblock %}
@@ -31,7 +42,7 @@
   <div class="sharelines">
     <ul>
       <li>
-        <a href="https://twitter.com/intent/tweet?text={{ MAIN.shareline_1 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}%20&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+        <a href="https://twitter.com/intent/tweet?text={{ MAIN.shareline_1 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
         <i class="fa fa-twitter"></i>
         </a>
         <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}" title="share on Facebook" class="social-share" target="_blank">
@@ -40,7 +51,7 @@
         <p>{{ MAIN.shareline_1 }}</p>
       </li>
       <li>
-        <a href="https://twitter.com/intent/tweet?text={{ MAIN.shareline_2 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}%20&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+        <a href="https://twitter.com/intent/tweet?text={{ MAIN.shareline_2 | urlencode }}%20http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
         <i class="fa fa-twitter"></i>
         </a>
         <a href="https://www.facebook.com/dialog/share?app_id=154122474650943&display=popup&href=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}&redirect_uri=http%3A%2F%2Fapps.texastribune.org%2Fblood-lessons%2F{{ MAIN.slug }}" title="share on Facebook" class="social-share" target="_blank">
@@ -89,9 +100,9 @@
   <section class="sub-navigation prose">
     <h3>More in this feature</h3>
     <ul>
-      <li><a href="../{{OVERVIEW.slug }}">{{OVERVIEW.headline}}</a> {{OVERVIEW.subhead}}</li>
-      <li><a href="../{{VIDEO.slug }}">{{VIDEO.headline}}</a> {{VIDEO.subhead}}</li>
-      <li><a href="../{{DATA.slug }}">{{DATA.headline }}</a> {{DATA.subhead}}</li>
+      <li><a href="../{{OVERVIEW.slug }}">{{OVERVIEW.headline}}</a> {{OVERVIEW.subhead}}.</li>
+      <li><a href="../{{VIDEO.slug }}">{{VIDEO.headline}}</a> {{VIDEO.subhead}}.</li>
+      <li><a href="../{{DATA.slug }}">{{DATA.headline }}</a> {{DATA.subhead}}.</li>
     </ul>
   </section>
 </div>
